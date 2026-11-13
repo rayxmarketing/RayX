@@ -16,10 +16,10 @@ MONTH_NAMES = {
 }
 NETWORK_NAMES = {"Youtube": "YouTube", "YouTube": "YouTube"}
 COMPETITORS = [
-    ("Code Automotive", 7629, "#F4C430"),
-    ("Cinoy", 15100, "#E5484D"),
-    ("JR8", 27700, "#E5484D"),
-    ("Shock Light", 20600, "#268CFF"),
+    ("Code Automotive", 11379, "#F4C430"),
+    ("Cinoy", 16572, "#E5484D"),
+    ("JR8", 30372, "#E5484D"),
+    ("Shock Light", 24471, "#268CFF"),
 ]
 
 
