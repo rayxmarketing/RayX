@@ -28,7 +28,7 @@ export default function Competitors({month,metric}:{month:Month;metric:'total'|N
  const maximum=Math.max(1,...rows.map(row=>row.value??0));
  return <section className="competitors">
   <h2>{t('Concorrentes')} <span>· {metric==='total'?t('Total'):metric}</span></h2>
-  <div className="bars">{rows.map((row,index)=><div className={`bar-row${selected===row.name?' selected-competitor':''}`} key={row.name}>
+  <div className="bars">{rows.map((row,index)=><div className={`bar-row${selected===row.name?' selected-competitor':''}${row.name==='RayX'?' rayx-row':''}`} key={row.name}>
    <button type="button" aria-pressed={selected===row.name} aria-label={row.name==='RayX'?t('Mostrar todos os concorrentes'):`${t('Comparar RayX com')} ${row.name}`} onClick={()=>setSelected(row.name==='RayX'?null:row.name)} className={`competitor-name${row.name==='RayX'?' rayx-competitor-name':''}`}>{row.name}</button><div className="track"><div className="bar competitor-bar" style={{width:expanded?`${(row.value??0)/maximum*100}%`:'0%',backgroundColor:row.color,transitionDelay:`${index*135}ms`,minWidth:expanded&&row.value?4:0}}/></div>
    <strong className={row.value===null?'missing':undefined}>{row.value===null?t('Não informado'):<CountUp value={row.value}/>}</strong>
   </div>)}</div>
