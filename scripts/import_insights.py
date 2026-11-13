@@ -108,6 +108,7 @@ def posts_for(month):
         if not candidates:
             continue
         views, network, col = max(candidates)
+        all_views = [number(sheet.cell(row, platform_col).value) for _, platform_col in platforms]
         all_likes = [number(sheet.cell(row, platform_col + 1).value) for _, platform_col in platforms]
         all_comments = [number(sheet.cell(row, platform_col + 2).value) for _, platform_col in platforms]
         posts.append({
@@ -115,6 +116,7 @@ def posts_for(month):
             "format": str(kind or "Conteúdo").replace("\n", " ").strip(),
             "title": str(title).strip('"'), "url": "", "media": "/automotive.svg",
             "views": views, "likes": number(sheet.cell(row, col + 1).value),
+            "totalViews": sum(value for value in all_views if value is not None),
             "totalLikes": sum(value for value in all_likes if value is not None),
             "totalComments": sum(value for value in all_comments if value is not None),
         })
@@ -159,6 +161,7 @@ for month in ("2026-08", "2026-09", "2026-10", "2026-11"):
 all_time_posts = [post for month in ("2026-07", "2026-08", "2026-09", "2026-10", "2026-11")
                   for post in posts_for(month)]
 data = {"logo": "/rayx-logo.png", "source": "spreadsheet", "months": months,
+        "allTimePostViews": sum(post["totalViews"] for post in all_time_posts),
         "allTimePostLikes": sum(post["totalLikes"] for post in all_time_posts),
         "allTimePostComments": sum(post["totalComments"] for post in all_time_posts)}
 (ROOT / "lib/imported-data.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
