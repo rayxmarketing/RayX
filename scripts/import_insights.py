@@ -16,11 +16,22 @@ MONTH_NAMES = {
 }
 NETWORK_NAMES = {"Youtube": "YouTube", "YouTube": "YouTube"}
 COMPETITORS = [
-    ("Code Automotive", 11379, "#F4C430"),
-    ("Cinoy", 16572, "#E5484D"),
-    ("JR8", 30372, "#E5484D"),
-    ("ASX", 67900, "#F5F5F5"),
-    ("Shock Light", 24471, "#268CFF"),
+    # Nome, Instagram, Facebook, TikTok, YouTube, total, cor
+    ("Uppertech", 64800, 0, 617, 56, 65473, "#E5484D"),
+    ("Tiger Auto", 11600, 0, 0, 0, 11600, "#268CFF"),
+    ("E Tech", 1386, 0, 0, 0, 1386, "#E5484D"),
+    ("Tarponn", 11700, 618, 0, 993, 13311, "#F4C430"),
+    ("FP Import", 4915, 0, 3844, 897, 9656, "#E5484D"),
+    ("First Option", 1535, 0, 249, 250, 2034, "#34C759"),
+    ("Alemar Group", 44200, 0, 2708, 98, 47006, "#268CFF"),
+    ("Force One", 11500, 0, 0, 0, 11500, "#F5F5F5"),
+    ("Suits", 890, 0, 0, 661, 1551, "#A855F7"),
+    ("Somma Films Wintech", 10400, 680, 0, 0, 11080, "#E5484D"),
+    ("Code Automotive", 7629, 679, 2263, 808, 11379, "#F4C430"),
+    ("Cinoy", 15100, 392, 0, 1080, 16572, "#E5484D"),
+    ("JR8", 27700, 1400, 172, 1100, 30372, "#E5484D"),
+    ("Shock Light", 20600, 2600, 11, 1260, 24471, "#268CFF"),
+    ("ASX", 67900, 0, 0, 0, 67900, "#F5F5F5"),
 ]
 
 
@@ -133,8 +144,10 @@ for month in ("2026-08", "2026-09", "2026-10", "2026-11"):
         "metrics": metrics,
         "competitors": [{"name": name, "profile": "", "date": date.date().isoformat(),
                          "total": total if is_november else None, "color": color,
-                         "followers": {network: None for network in ("Facebook", "Instagram", "YouTube", "TikTok")}}
-                        for name, total, color in COMPETITORS],
+                         "followers": ({"Instagram": instagram, "Facebook": facebook,
+                                        "TikTok": tiktok, "YouTube": youtube} if is_november else
+                                       {network: None for network in ("Facebook", "Instagram", "YouTube", "TikTok")})}
+                        for name, instagram, facebook, tiktok, youtube, total, color in COMPETITORS],
         "posts": posts_for(month), "highlight": highlight,
     })
 
