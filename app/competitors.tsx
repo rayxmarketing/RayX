@@ -25,7 +25,7 @@ export default function Competitors({month,metric}:{month:Month;metric:'total'|N
  return <section className="competitors">
   <h2>Concorrentes <span>· {metric==='total'?'Total':metric}</span></h2>
   <div className="bars">{rows.map((row,index)=><div className="bar-row" key={row.name}>
-   <span>{row.name}</span><div className="track"><div className="bar competitor-bar" style={{width:expanded?`${(row.value??0)/maximum*100}%`:'0%',backgroundColor:row.color,transitionDelay:`${index*90}ms`,minWidth:expanded&&row.value?4:0}}/></div>
+   <span className={row.name==='RayX'?'rayx-competitor-name':undefined}>{row.name}</span><div className="track"><div className="bar competitor-bar" style={{width:expanded?`${(row.value??0)/maximum*100}%`:'0%',backgroundColor:row.color,transitionDelay:`${index*90}ms`,minWidth:expanded&&row.value?4:0}}/></div>
    <strong className={row.value===null?'missing':undefined}>{row.value===null?'Não informado':<CountUp value={row.value}/>}</strong>
   </div>)}</div>
   <small>{metric==='total'?'Total das quatro redes':'Seguidores / inscritos por rede'} · referência {new Date(month.date+'T12:00:00').toLocaleDateString('pt-BR')}</small>
