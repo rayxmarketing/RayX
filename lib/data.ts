@@ -5,9 +5,9 @@ export type Post = {id:string;network:Network;date:string;format:string;title:st
 export type Month = {month:string;date:string;complete:boolean;metrics:Record<Network,Metrics>;competitors:{name:string;profile:string;date:string;followers:Record<Network,number|null>;total?:number|null;color?:string}[];posts:Post[];highlight:{src:string;type:'image'|'video';fit:'cover'|'contain';url:string;views?:number;likes?:number;comments?:number;shares?:number;title?:string};updatedAt:string};
 export type Data = {source?:'spreadsheet';logo:string;months:Month[];allTimePostLikes?:number;allTimePostComments?:number};
 export const featuredContents=[
- {title:'O que tem no carro',format:'Reels de engajamento',date:'2026-09-28',views:235714,likes:34,comments:12},
- {title:'Qual LED escolher',format:'Reels Tech Luz',date:'2026-08-17',views:737419,likes:7800,comments:1828},
- {title:'Qual LED entrega o resultado',format:'Reels Tech Luz',date:'2026-10-02',views:43284,likes:510,comments:63},
+ {title:'O que tem no carro',format:'Reels de engajamento',date:'2026-09-28',image:'/featured-o-que-tem-no-carro.jpg',views:235714,likes:34,comments:12},
+ {title:'Qual LED escolher',format:'Reels Tech Luz',date:'2026-08-17',image:'/featured-qual-led-escolher.jpg',views:737419,likes:7800,comments:1828},
+ {title:'Qual LED entrega o resultado',format:'Reels Tech Luz',date:'2026-10-02',image:'/featured-qual-led-resultado.jpg',views:43284,likes:510,comments:63},
 ] as const;
 export const fmt=(n:number|null|undefined)=>n==null?'Não informado':new Intl.NumberFormat('pt-BR').format(n);
 export const total=(m:Month)=>networks.reduce((s,n)=>s+m.metrics[n].followers,0);
