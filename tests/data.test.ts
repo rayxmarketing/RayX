@@ -1,0 +1,5 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {fixtures,total,growth,percent,networks,comparable,canEdit,validate} from '../lib/data';
+test('fechamentos e crescimento',()=>{const d=fixtures();assert.equal(total(d.months[2]),48200);assert.equal(growth(d.months[2],d.months[1]),1240);assert.equal(total(d.months[0]),44890);assert.deepEqual(networks,['Facebook','Instagram','YouTube','TikTok']);validate(d)});
+test('ausências e períodos incomparáveis',()=>{const d=fixtures();assert.equal(percent(10,0),null);assert.equal(growth(d.months[2],d.months[0]),null);d.months[2].complete=false;assert.equal(growth(d.months[2],d.months[1]),null);d.months[2].competitors[0].followers.Facebook=null;assert.equal(comparable(d.months[2]).length,1)});
+test('somente administrador edita',()=>{assert.equal(canEdit('viewer'),false);assert.equal(canEdit(null),false);assert.equal(canEdit('admin'),true)});
+test('validação rejeita negativos',()=>{const d=fixtures();d.months[0].metrics.Facebook.followers=-1;assert.throws(()=>validate(d))});

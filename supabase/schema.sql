@@ -1,0 +1,21 @@
+-- Execute no SQL Editor do Supabase. Dados reais começam vazios.
+create table if not exists public.profiles (id uuid primary key references auth.users(id) on delete cascade, role text not null check(role in ('admin','viewer')));
+create table if not exists public.dashboard (id integer primary key check(id=1), data jsonb not null);
+alter table public.profiles enable row level security;
+alter table public.dashboard enable row level security;
+create or replace function public.is_admin() returns boolean language sql stable security definer set search_path=public as $$ select exists(select 1 from profiles where id=auth.uid() and role='admin') $$;
+create or replace function public.is_member() returns boolean language sql stable security definer set search_path=public as $$ select exists(select 1 from profiles where id=auth.uid()) $$;
+create policy "Own profile" on public.profiles for select to authenticated using(id=auth.uid());
+create policy "Members read" on public.dashboard for select to authenticated using(public.is_member());
+create policy "Admins insert" on public.dashboard for insert to authenticated with check(public.is_admin());
+create policy "Admins update" on public.dashboard for update to authenticated using(public.is_admin()) with check(public.is_admin());
+insert into storage.buckets(id,name,public,file_size_limit,allowed_mime_types) values('media','media',false,10485760,array['image/jpeg','image/png','image/webp','video/mp4','video/webm']) on conflict(id) do nothing;
+create policy "Members read media" on storage.objects for select to authenticated using(bucket_id='media' and public.is_member());
+create policy "Admins upload media" on storage.objects for insert to authenticated with check(bucket_id='media' and public.is_admin());
+create policy "Admins update media" on storage.objects for update to authenticated using(bucket_id='media' and public.is_admin()) with check(bucket_id='media' and public.is_admin());
+create policy "Admins delete media" on storage.objects for delete to authenticated using(bucket_id='media' and public.is_admin());
+revoke all on public.profiles,public.dashboard from anon,authenticated;
+grant select on public.profiles to authenticated;
+grant select,insert,update on public.dashboard to authenticated;
+revoke execute on function public.is_admin(),public.is_member() from public;
+grant execute on function public.is_admin(),public.is_member() to authenticated;
