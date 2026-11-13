@@ -15,7 +15,13 @@ MONTH_NAMES = {
     "Outubro 2026": "2026-10", "Novembro 2026": "2026-11",
 }
 NETWORK_NAMES = {"Youtube": "YouTube", "YouTube": "YouTube"}
-COMPETITORS = ["Code Automotive", "Cinoy", "ASX", "JR8", "TechOne"]
+COMPETITORS = [
+    ("Code Automotive", 7629, "#F4C430"),
+    ("Cinoy", 15100, "#E5484D"),
+    ("JR8", 27700, "#E5484D"),
+    ("Shock Light", 20600, "#268CFF"),
+    ("TechOne", 420000, "#268CFF"),
+]
 
 
 def number(value):
@@ -126,8 +132,9 @@ for month in ("2026-08", "2026-09", "2026-10", "2026-11"):
         "updatedAt": date.replace(hour=12, tzinfo=timezone.utc).isoformat().replace("+00:00", "Z"),
         "metrics": metrics,
         "competitors": [{"name": name, "profile": "", "date": date.date().isoformat(),
+                         "total": total if is_november else None, "color": color,
                          "followers": {network: None for network in ("Facebook", "Instagram", "YouTube", "TikTok")}}
-                        for name in COMPETITORS],
+                        for name, total, color in COMPETITORS],
         "posts": posts_for(month), "highlight": highlight,
     })
 

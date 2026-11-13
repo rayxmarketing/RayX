@@ -54,6 +54,8 @@
           "name": "Code Automotive",
           "profile": "",
           "date": "2026-08-31",
+          "total": null,
+          "color": "#F4C430",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -65,17 +67,8 @@
           "name": "Cinoy",
           "profile": "",
           "date": "2026-08-31",
-          "followers": {
-            "Facebook": null,
-            "Instagram": null,
-            "YouTube": null,
-            "TikTok": null
-          }
-        },
-        {
-          "name": "ASX",
-          "profile": "",
-          "date": "2026-08-31",
+          "total": null,
+          "color": "#E5484D",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -87,6 +80,21 @@
           "name": "JR8",
           "profile": "",
           "date": "2026-08-31",
+          "total": null,
+          "color": "#E5484D",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "Shock Light",
+          "profile": "",
+          "date": "2026-08-31",
+          "total": null,
+          "color": "#268CFF",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -98,6 +106,8 @@
           "name": "TechOne",
           "profile": "",
           "date": "2026-08-31",
+          "total": null,
+          "color": "#268CFF",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -387,6 +397,8 @@
           "name": "Code Automotive",
           "profile": "",
           "date": "2026-09-30",
+          "total": null,
+          "color": "#F4C430",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -398,17 +410,8 @@
           "name": "Cinoy",
           "profile": "",
           "date": "2026-09-30",
-          "followers": {
-            "Facebook": null,
-            "Instagram": null,
-            "YouTube": null,
-            "TikTok": null
-          }
-        },
-        {
-          "name": "ASX",
-          "profile": "",
-          "date": "2026-09-30",
+          "total": null,
+          "color": "#E5484D",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -420,6 +423,21 @@
           "name": "JR8",
           "profile": "",
           "date": "2026-09-30",
+          "total": null,
+          "color": "#E5484D",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "Shock Light",
+          "profile": "",
+          "date": "2026-09-30",
+          "total": null,
+          "color": "#268CFF",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -431,6 +449,8 @@
           "name": "TechOne",
           "profile": "",
           "date": "2026-09-30",
+          "total": null,
+          "color": "#268CFF",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -764,6 +784,8 @@
           "name": "Code Automotive",
           "profile": "",
           "date": "2026-10-30",
+          "total": null,
+          "color": "#F4C430",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -775,17 +797,8 @@
           "name": "Cinoy",
           "profile": "",
           "date": "2026-10-30",
-          "followers": {
-            "Facebook": null,
-            "Instagram": null,
-            "YouTube": null,
-            "TikTok": null
-          }
-        },
-        {
-          "name": "ASX",
-          "profile": "",
-          "date": "2026-10-30",
+          "total": null,
+          "color": "#E5484D",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -797,6 +810,21 @@
           "name": "JR8",
           "profile": "",
           "date": "2026-10-30",
+          "total": null,
+          "color": "#E5484D",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "Shock Light",
+          "profile": "",
+          "date": "2026-10-30",
+          "total": null,
+          "color": "#268CFF",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -808,6 +836,8 @@
           "name": "TechOne",
           "profile": "",
           "date": "2026-10-30",
+          "total": null,
+          "color": "#268CFF",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -1119,6 +1149,8 @@
           "name": "Code Automotive",
           "profile": "",
           "date": "2026-11-13",
+          "total": 7629,
+          "color": "#F4C430",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -1130,17 +1162,8 @@
           "name": "Cinoy",
           "profile": "",
           "date": "2026-11-13",
-          "followers": {
-            "Facebook": null,
-            "Instagram": null,
-            "YouTube": null,
-            "TikTok": null
-          }
-        },
-        {
-          "name": "ASX",
-          "profile": "",
-          "date": "2026-11-13",
+          "total": 15100,
+          "color": "#E5484D",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -1152,6 +1175,21 @@
           "name": "JR8",
           "profile": "",
           "date": "2026-11-13",
+          "total": 27700,
+          "color": "#E5484D",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "Shock Light",
+          "profile": "",
+          "date": "2026-11-13",
+          "total": 20600,
+          "color": "#268CFF",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -1163,6 +1201,8 @@
           "name": "TechOne",
           "profile": "",
           "date": "2026-11-13",
+          "total": 420000,
+          "color": "#268CFF",
           "followers": {
             "Facebook": null,
             "Instagram": null,
