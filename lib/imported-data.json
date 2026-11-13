@@ -90,6 +90,19 @@
           }
         },
         {
+          "name": "ASX",
+          "profile": "",
+          "date": "2026-08-31",
+          "total": null,
+          "color": "#F5F5F5",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
           "name": "Shock Light",
           "profile": "",
           "date": "2026-08-31",
@@ -412,6 +425,19 @@
           "date": "2026-09-30",
           "total": null,
           "color": "#E5484D",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "ASX",
+          "profile": "",
+          "date": "2026-09-30",
+          "total": null,
+          "color": "#F5F5F5",
           "followers": {
             "Facebook": null,
             "Instagram": null,
@@ -794,6 +820,19 @@
           }
         },
         {
+          "name": "ASX",
+          "profile": "",
+          "date": "2026-10-30",
+          "total": null,
+          "color": "#F5F5F5",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
           "name": "Shock Light",
           "profile": "",
           "date": "2026-10-30",
@@ -1138,6 +1177,19 @@
           "date": "2026-11-13",
           "total": 30372,
           "color": "#E5484D",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "ASX",
+          "profile": "",
+          "date": "2026-11-13",
+          "total": 67900,
+          "color": "#F5F5F5",
           "followers": {
             "Facebook": null,
             "Instagram": null,

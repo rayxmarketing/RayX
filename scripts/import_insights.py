@@ -19,6 +19,7 @@ COMPETITORS = [
     ("Code Automotive", 11379, "#F4C430"),
     ("Cinoy", 16572, "#E5484D"),
     ("JR8", 30372, "#E5484D"),
+    ("ASX", 67900, "#F5F5F5"),
     ("Shock Light", 24471, "#268CFF"),
 ]
 
