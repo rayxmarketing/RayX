@@ -3,3 +3,6 @@ test('fechamentos e crescimento',()=>{const d=fixtures();assert.equal(total(d.mo
 test('ausências e períodos incomparáveis',()=>{const d=fixtures();assert.equal(percent(10,0),null);assert.equal(growth(d.months[2],d.months[0]),null);d.months[2].complete=false;assert.equal(growth(d.months[2],d.months[1]),null);d.months[2].competitors[0].followers.Facebook=null;assert.equal(comparable(d.months[2]).length,1)});
 test('somente administrador edita',()=>{assert.equal(canEdit('viewer'),false);assert.equal(canEdit(null),false);assert.equal(canEdit('admin'),true)});
 test('validação rejeita negativos',()=>{const d=fixtures();d.months[0].metrics.Facebook.followers=-1;assert.throws(()=>validate(d))});
+import {importedData} from '../lib/imported';
+import observations from '../lib/observations.json';
+test('planilha real preserva datas, total e janela desconhecida',()=>{const d=importedData();validate(d);assert.equal(total(d.months[0]),16427);assert.equal(d.months[0].complete,false);assert.equal(d.months[0].highlight.views,392000);assert.equal(observations.length,9);assert.equal(observations.at(-1)?.values['TikTok · Views'],89600);assert.equal(observations.at(-1)?.values['Instagram · Views'],241900);assert.equal(d.months[0].metrics.Instagram.reach,null)});
