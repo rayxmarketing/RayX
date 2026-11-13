@@ -108,11 +108,15 @@ def posts_for(month):
         if not candidates:
             continue
         views, network, col = max(candidates)
+        all_likes = [number(sheet.cell(row, platform_col + 1).value) for _, platform_col in platforms]
+        all_comments = [number(sheet.cell(row, platform_col + 2).value) for _, platform_col in platforms]
         posts.append({
             "id": f"{month}-{row}", "network": network, "date": posted.date().isoformat(),
             "format": str(kind or "Conteúdo").replace("\n", " ").strip(),
             "title": str(title).strip('"'), "url": "", "media": "/automotive.svg",
             "views": views, "likes": number(sheet.cell(row, col + 1).value),
+            "totalLikes": sum(value for value in all_likes if value is not None),
+            "totalComments": sum(value for value in all_comments if value is not None),
         })
     return posts
 

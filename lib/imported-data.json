@@ -256,7 +256,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 691,
-          "likes": 26
+          "likes": 26,
+          "totalLikes": 26,
+          "totalComments": 0
         },
         {
           "id": "2026-08-4",
@@ -267,7 +269,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 473,
-          "likes": 29
+          "likes": 29,
+          "totalLikes": 29,
+          "totalComments": 3
         },
         {
           "id": "2026-08-5",
@@ -278,7 +282,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 175,
-          "likes": 9
+          "likes": 9,
+          "totalLikes": 9,
+          "totalComments": 0
         },
         {
           "id": "2026-08-6",
@@ -289,7 +295,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 608,
-          "likes": 15
+          "likes": 15,
+          "totalLikes": 28,
+          "totalComments": 1
         },
         {
           "id": "2026-08-7",
@@ -300,7 +308,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 218,
-          "likes": 12
+          "likes": 12,
+          "totalLikes": 12,
+          "totalComments": 0
         },
         {
           "id": "2026-08-8",
@@ -311,7 +321,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 169,
-          "likes": 12
+          "likes": 12,
+          "totalLikes": 12,
+          "totalComments": 0
         },
         {
           "id": "2026-08-9",
@@ -322,7 +334,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 3700,
-          "likes": 49
+          "likes": 49,
+          "totalLikes": 94,
+          "totalComments": 4
         },
         {
           "id": "2026-08-10",
@@ -333,7 +347,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 734592,
-          "likes": 7734
+          "likes": 7734,
+          "totalLikes": 7800,
+          "totalComments": 1828
         },
         {
           "id": "2026-08-11",
@@ -344,7 +360,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 277,
-          "likes": 15
+          "likes": 15,
+          "totalLikes": 15,
+          "totalComments": 4
         },
         {
           "id": "2026-08-12",
@@ -355,7 +373,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 951,
-          "likes": 35
+          "likes": 35,
+          "totalLikes": 36,
+          "totalComments": 14
         },
         {
           "id": "2026-08-13",
@@ -366,7 +386,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 395,
-          "likes": 22
+          "likes": 22,
+          "totalLikes": 22,
+          "totalComments": 0
         },
         {
           "id": "2026-08-14",
@@ -377,7 +399,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 599,
-          "likes": 2
+          "likes": 2,
+          "totalLikes": 27,
+          "totalComments": 4
         },
         {
           "id": "2026-08-15",
@@ -388,7 +412,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 343194,
-          "likes": 27
+          "likes": 27,
+          "totalLikes": 63,
+          "totalComments": 13
         },
         {
           "id": "2026-08-16",
@@ -399,7 +425,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 118228,
-          "likes": 28
+          "likes": 28,
+          "totalLikes": 47,
+          "totalComments": 7
         },
         {
           "id": "2026-08-17",
@@ -410,7 +438,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 318,
-          "likes": 22
+          "likes": 22,
+          "totalLikes": 22,
+          "totalComments": 0
         },
         {
           "id": "2026-08-18",
@@ -421,7 +451,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 182,
-          "likes": 14
+          "likes": 14,
+          "totalLikes": 14,
+          "totalComments": 1
         },
         {
           "id": "2026-08-19",
@@ -432,7 +464,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 283,
-          "likes": 9
+          "likes": 9,
+          "totalLikes": 9,
+          "totalComments": 2
         },
         {
           "id": "2026-08-20",
@@ -443,7 +477,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 507,
-          "likes": 3
+          "likes": 3,
+          "totalLikes": 26,
+          "totalComments": 4
         },
         {
           "id": "2026-08-21",
@@ -454,7 +490,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1347,
-          "likes": 5
+          "likes": 5,
+          "totalLikes": 31,
+          "totalComments": 4
         },
         {
           "id": "2026-08-22",
@@ -465,7 +503,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 2266,
-          "likes": 9
+          "likes": 9,
+          "totalLikes": 36,
+          "totalComments": 5
         }
       ],
       "highlight": {
@@ -729,7 +769,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 171,
-          "likes": 13
+          "likes": 13,
+          "totalLikes": 13,
+          "totalComments": 0
         },
         {
           "id": "2026-09-4",
@@ -740,7 +782,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 191,
-          "likes": 16
+          "likes": 16,
+          "totalLikes": 16,
+          "totalComments": 0
         },
         {
           "id": "2026-09-5",
@@ -751,7 +795,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1082,
-          "likes": 1
+          "likes": 1,
+          "totalLikes": 33,
+          "totalComments": 10
         },
         {
           "id": "2026-09-6",
@@ -762,7 +808,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 316,
-          "likes": 17
+          "likes": 17,
+          "totalLikes": 17,
+          "totalComments": 0
         },
         {
           "id": "2026-09-7",
@@ -773,7 +821,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 2643,
-          "likes": 13
+          "likes": 13,
+          "totalLikes": 50,
+          "totalComments": 2
         },
         {
           "id": "2026-09-8",
@@ -784,7 +834,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 2700,
-          "likes": 6
+          "likes": 6,
+          "totalLikes": 33,
+          "totalComments": 0
         },
         {
           "id": "2026-09-9",
@@ -795,7 +847,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 364,
-          "likes": 13
+          "likes": 13,
+          "totalLikes": 13,
+          "totalComments": 0
         },
         {
           "id": "2026-09-10",
@@ -806,7 +860,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1137,
-          "likes": 6
+          "likes": 6,
+          "totalLikes": 38,
+          "totalComments": 15
         },
         {
           "id": "2026-09-11",
@@ -817,7 +873,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 394,
-          "likes": 18
+          "likes": 18,
+          "totalLikes": 18,
+          "totalComments": 7
         },
         {
           "id": "2026-09-12",
@@ -828,7 +886,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1459,
-          "likes": 1
+          "likes": 1,
+          "totalLikes": 54,
+          "totalComments": 5
         },
         {
           "id": "2026-09-13",
@@ -839,7 +899,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 599,
-          "likes": 1
+          "likes": 1,
+          "totalLikes": 47,
+          "totalComments": 4
         },
         {
           "id": "2026-09-14",
@@ -850,7 +912,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 262,
-          "likes": 12
+          "likes": 12,
+          "totalLikes": 12,
+          "totalComments": 0
         },
         {
           "id": "2026-09-15",
@@ -861,7 +925,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1168,
-          "likes": 56
+          "likes": 56,
+          "totalLikes": 63,
+          "totalComments": 14
         },
         {
           "id": "2026-09-16",
@@ -872,7 +938,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 699,
-          "likes": 11
+          "likes": 11,
+          "totalLikes": 15,
+          "totalComments": 2
         },
         {
           "id": "2026-09-17",
@@ -883,7 +951,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 177,
-          "likes": 21
+          "likes": 21,
+          "totalLikes": 21,
+          "totalComments": 0
         },
         {
           "id": "2026-09-18",
@@ -894,7 +964,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 649,
-          "likes": 4
+          "likes": 4,
+          "totalLikes": 32,
+          "totalComments": 8
         },
         {
           "id": "2026-09-19",
@@ -905,7 +977,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 4882,
-          "likes": 35
+          "likes": 35,
+          "totalLikes": 87,
+          "totalComments": 25
         },
         {
           "id": "2026-09-20",
@@ -916,7 +990,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 548,
-          "likes": 28
+          "likes": 28,
+          "totalLikes": 29,
+          "totalComments": 4
         },
         {
           "id": "2026-09-21",
@@ -927,7 +1003,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 3722,
-          "likes": 21
+          "likes": 21,
+          "totalLikes": 83,
+          "totalComments": 7
         },
         {
           "id": "2026-09-22",
@@ -938,7 +1016,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 254,
-          "likes": 16
+          "likes": 16,
+          "totalLikes": 16,
+          "totalComments": 1
         },
         {
           "id": "2026-09-23",
@@ -949,7 +1029,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1865,
-          "likes": 47
+          "likes": 47,
+          "totalLikes": 65,
+          "totalComments": 6
         },
         {
           "id": "2026-09-24",
@@ -960,7 +1042,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 235030,
-          "likes": 31
+          "likes": 31,
+          "totalLikes": 34,
+          "totalComments": 12
         },
         {
           "id": "2026-09-25",
@@ -971,7 +1055,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 732,
-          "likes": 24
+          "likes": 24,
+          "totalLikes": 24,
+          "totalComments": 6
         },
         {
           "id": "2026-09-26",
@@ -982,7 +1068,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 15481,
-          "likes": 149
+          "likes": 149,
+          "totalLikes": 210,
+          "totalComments": 66
         }
       ],
       "highlight": {
@@ -1246,7 +1334,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 130,
-          "likes": 0
+          "likes": 0,
+          "totalLikes": 12,
+          "totalComments": 0
         },
         {
           "id": "2026-10-4",
@@ -1257,7 +1347,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 483,
-          "likes": 18
+          "likes": 18,
+          "totalLikes": 26,
+          "totalComments": 2
         },
         {
           "id": "2026-10-5",
@@ -1268,7 +1360,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 41805,
-          "likes": 481
+          "likes": 481,
+          "totalLikes": 510,
+          "totalComments": 63
         },
         {
           "id": "2026-10-6",
@@ -1279,7 +1373,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1964,
-          "likes": 19
+          "likes": 19,
+          "totalLikes": 44,
+          "totalComments": 6
         },
         {
           "id": "2026-10-7",
@@ -1290,7 +1386,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 450,
-          "likes": 20
+          "likes": 20,
+          "totalLikes": 21,
+          "totalComments": 2
         },
         {
           "id": "2026-10-8",
@@ -1301,7 +1399,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 2423,
-          "likes": 43
+          "likes": 43,
+          "totalLikes": 67,
+          "totalComments": 3
         },
         {
           "id": "2026-10-9",
@@ -1312,7 +1412,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 907,
-          "likes": 4
+          "likes": 4,
+          "totalLikes": 34,
+          "totalComments": 0
         },
         {
           "id": "2026-10-10",
@@ -1323,7 +1425,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1558,
-          "likes": 14
+          "likes": 14,
+          "totalLikes": 49,
+          "totalComments": 8
         },
         {
           "id": "2026-10-11",
@@ -1334,7 +1438,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 717,
-          "likes": 28
+          "likes": 28,
+          "totalLikes": 29,
+          "totalComments": 1
         },
         {
           "id": "2026-10-12",
@@ -1345,7 +1451,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1600,
-          "likes": 14
+          "likes": 14,
+          "totalLikes": 35,
+          "totalComments": 2
         },
         {
           "id": "2026-10-13",
@@ -1356,7 +1464,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 786,
-          "likes": 8
+          "likes": 8,
+          "totalLikes": 36,
+          "totalComments": 2
         },
         {
           "id": "2026-10-14",
@@ -1367,7 +1477,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1366,
-          "likes": 13
+          "likes": 13,
+          "totalLikes": 41,
+          "totalComments": 4
         },
         {
           "id": "2026-10-15",
@@ -1378,7 +1490,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 810,
-          "likes": 4
+          "likes": 4,
+          "totalLikes": 46,
+          "totalComments": 3
         },
         {
           "id": "2026-10-16",
@@ -1389,7 +1503,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 402,
-          "likes": 21
+          "likes": 21,
+          "totalLikes": 25,
+          "totalComments": 1
         },
         {
           "id": "2026-10-17",
@@ -1400,7 +1516,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1628,
-          "likes": 6
+          "likes": 6,
+          "totalLikes": 39,
+          "totalComments": 12
         },
         {
           "id": "2026-10-18",
@@ -1411,7 +1529,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 89,
-          "likes": null
+          "likes": null,
+          "totalLikes": 0,
+          "totalComments": 0
         },
         {
           "id": "2026-10-19",
@@ -1422,7 +1542,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 30955,
-          "likes": 268
+          "likes": 268,
+          "totalLikes": 320,
+          "totalComments": 37
         },
         {
           "id": "2026-10-20",
@@ -1433,7 +1555,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1144,
-          "likes": 5
+          "likes": 5,
+          "totalLikes": 32,
+          "totalComments": 1
         },
         {
           "id": "2026-10-21",
@@ -1444,7 +1568,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 592,
-          "likes": 15
+          "likes": 15,
+          "totalLikes": 15,
+          "totalComments": 0
         },
         {
           "id": "2026-10-22",
@@ -1455,7 +1581,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 556,
-          "likes": 2
+          "likes": 2,
+          "totalLikes": 26,
+          "totalComments": 1
         },
         {
           "id": "2026-10-23",
@@ -1466,7 +1594,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 506,
-          "likes": 19
+          "likes": 19,
+          "totalLikes": 19,
+          "totalComments": 0
         },
         {
           "id": "2026-10-24",
@@ -1477,7 +1607,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 4861,
-          "likes": 41
+          "likes": 41,
+          "totalLikes": 68,
+          "totalComments": 2
         }
       ],
       "highlight": {
@@ -1741,7 +1873,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 2844,
-          "likes": 13
+          "likes": 13,
+          "totalLikes": 51,
+          "totalComments": 4
         },
         {
           "id": "2026-11-4",
@@ -1752,7 +1886,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 177,
-          "likes": 0
+          "likes": 0,
+          "totalLikes": 11,
+          "totalComments": 0
         },
         {
           "id": "2026-11-5",
@@ -1763,7 +1899,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 662,
-          "likes": 20
+          "likes": 20,
+          "totalLikes": 20,
+          "totalComments": 0
         },
         {
           "id": "2026-11-6",
@@ -1774,7 +1912,9 @@
           "url": "",
           "media": "/automotive.svg",
           "views": 1408,
-          "likes": 9
+          "likes": 9,
+          "totalLikes": 38,
+          "totalComments": 8
         }
       ],
       "highlight": {
