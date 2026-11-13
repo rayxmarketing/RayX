@@ -9,7 +9,7 @@ type Movement='up'|'down'|'same';
 type RankMemory=Record<string,Record<string,{current:number;previous:number}>>;
 
 export default function Competitors({month,metric}:{month:Month;metric:'total'|Network}) {
- const {t,dateLocale,locale}=useI18n();
+ const {t,dateLocale}=useI18n();
  const [expanded,setExpanded]=useState(false);
  const [selected,setSelected]=useState<string|null>(null);
  const [movements,setMovements]=useState<Record<string,Movement>>({});
@@ -51,8 +51,6 @@ export default function Competitors({month,metric}:{month:Month;metric:'total'|N
  const rayxRow=rankedRows.find(row=>row.name==='RayX')!;
  const gap=selectedRow?.value!=null&&rayxRow.value!=null?rayxRow.value-selectedRow.value:null;
  const percentage=gap!=null&&selectedRow?.value?gap/selectedRow.value*100:null;
- const selectedCompetitor=selected?month.competitors.find(item=>item.name===selected):undefined;
- const closest=selectedCompetitor?networks.map(network=>({network,difference:month.metrics[network].followers-(selectedCompetitor.followers[network]??0),available:selectedCompetitor.followers[network]!==null})).filter(item=>item.available).sort((a,b)=>Math.abs(a.difference)-Math.abs(b.difference))[0]:undefined;
  const MovementIcon=({name}:{name:string})=>{const movement=movements[name]??'same';const Icon=movement==='up'?ArrowUp:movement==='down'?ArrowDown:Minus;return <Icon className={`rank-movement ${movement}`} size={16} aria-label={t(movement==='up'?'Subiu no ranking':movement==='down'?'Desceu no ranking':'Manteve a posição')}/>};
  return <section className="competitors">
   <h2>{t('Concorrentes')} <span>· {metric==='total'?t('Total'):metric}</span></h2>
@@ -63,8 +61,6 @@ export default function Competitors({month,metric}:{month:Month;metric:'total'|N
   {selectedRow&&gap!=null&&<div className="comparison-insights">
    <div><small>{t('Diferença atual')}</small><strong>{new Intl.NumberFormat(dateLocale,{signDisplay:'always'}).format(gap)}</strong><span>{gap>=0?t('RayX à frente'):t('RayX atrás')}</span></div>
    <div><small>{t('Diferença percentual')}</small><strong>{percentage==null?'—':new Intl.NumberFormat(dateLocale,{signDisplay:'always',minimumFractionDigits:1,maximumFractionDigits:1}).format(percentage)+'%'}</strong><span>{t('em relação ao concorrente')}</span></div>
-   <div><small>{t('Rede mais próxima')}</small><strong>{closest?.network??'—'}</strong><span>{closest?`${new Intl.NumberFormat(dateLocale).format(Math.abs(closest.difference))} ${t('de diferença')}`:'—'}</span></div>
-   <div><small>{gap<0?t('Falta para ultrapassar'):t('Vantagem da RayX')}</small><strong>{new Intl.NumberFormat(dateLocale).format(gap<0?Math.abs(gap)+1:gap)}</strong><span>{locale==='zh-CN'?'粉丝/订阅者':t('seguidores / inscritos')}</span></div>
   </div>}
   <small>{t(metric==='total'?'Total das quatro redes':'Seguidores / inscritos por rede')} · {t('referência')} {new Date(month.date+'T12:00:00').toLocaleDateString(dateLocale)} · {t('Clique em um concorrente para comparar')}</small>
  </section>;
