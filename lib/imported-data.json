@@ -101,19 +101,6 @@
             "YouTube": null,
             "TikTok": null
           }
-        },
-        {
-          "name": "TechOne",
-          "profile": "",
-          "date": "2026-08-31",
-          "total": null,
-          "color": "#268CFF",
-          "followers": {
-            "Facebook": null,
-            "Instagram": null,
-            "YouTube": null,
-            "TikTok": null
-          }
         }
       ],
       "posts": [
@@ -434,19 +421,6 @@
         },
         {
           "name": "Shock Light",
-          "profile": "",
-          "date": "2026-09-30",
-          "total": null,
-          "color": "#268CFF",
-          "followers": {
-            "Facebook": null,
-            "Instagram": null,
-            "YouTube": null,
-            "TikTok": null
-          }
-        },
-        {
-          "name": "TechOne",
           "profile": "",
           "date": "2026-09-30",
           "total": null,
@@ -831,19 +805,6 @@
             "YouTube": null,
             "TikTok": null
           }
-        },
-        {
-          "name": "TechOne",
-          "profile": "",
-          "date": "2026-10-30",
-          "total": null,
-          "color": "#268CFF",
-          "followers": {
-            "Facebook": null,
-            "Instagram": null,
-            "YouTube": null,
-            "TikTok": null
-          }
         }
       ],
       "posts": [
@@ -1189,19 +1150,6 @@
           "profile": "",
           "date": "2026-11-13",
           "total": 20600,
-          "color": "#268CFF",
-          "followers": {
-            "Facebook": null,
-            "Instagram": null,
-            "YouTube": null,
-            "TikTok": null
-          }
-        },
-        {
-          "name": "TechOne",
-          "profile": "",
-          "date": "2026-11-13",
-          "total": 420000,
           "color": "#268CFF",
           "followers": {
             "Facebook": null,

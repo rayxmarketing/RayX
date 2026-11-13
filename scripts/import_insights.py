@@ -20,7 +20,6 @@ COMPETITORS = [
     ("Cinoy", 15100, "#E5484D"),
     ("JR8", 27700, "#E5484D"),
     ("Shock Light", 20600, "#268CFF"),
-    ("TechOne", 420000, "#268CFF"),
 ]
 
 
