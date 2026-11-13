@@ -4,6 +4,11 @@ export type Metrics = {followers:number;reach:number|null;views:number|null;inte
 export type Post = {id:string;network:Network;date:string;format:string;title:string;url:string;media:string;views:number|null;likes:number|null;totalLikes?:number|null;totalComments?:number|null};
 export type Month = {month:string;date:string;complete:boolean;metrics:Record<Network,Metrics>;competitors:{name:string;profile:string;date:string;followers:Record<Network,number|null>;total?:number|null;color?:string}[];posts:Post[];highlight:{src:string;type:'image'|'video';fit:'cover'|'contain';url:string;views?:number;likes?:number;comments?:number;shares?:number;title?:string};updatedAt:string};
 export type Data = {source?:'spreadsheet';logo:string;months:Month[];allTimePostLikes?:number;allTimePostComments?:number};
+export const featuredContents=[
+ {title:'O que tem no carro',format:'Reels de engajamento',date:'2026-09-28',views:235714,likes:34,comments:12},
+ {title:'Qual LED escolher',format:'Reels Tech Luz',date:'2026-08-17',views:737419,likes:7800,comments:1828},
+ {title:'Qual LED entrega o resultado',format:'Reels Tech Luz',date:'2026-10-02',views:43284,likes:510,comments:63},
+] as const;
 export const fmt=(n:number|null|undefined)=>n==null?'Não informado':new Intl.NumberFormat('pt-BR').format(n);
 export const total=(m:Month)=>networks.reduce((s,n)=>s+m.metrics[n].followers,0);
 export const interactions=(m:Metrics)=>{if(m.interactions!=null)return m.interactions;const a=[m.likes,m.comments,m.shares,m.saves].filter(v=>v!==null);return a.length?a.reduce((s,v)=>s+v,0):null};
