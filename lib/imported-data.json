@@ -1,0 +1,1230 @@
+{
+  "logo": "/rayx-logo.png",
+  "source": "spreadsheet",
+  "months": [
+    {
+      "month": "2026-08",
+      "date": "2026-08-31",
+      "complete": true,
+      "updatedAt": "2026-08-31T12:00:00Z",
+      "metrics": {
+        "Facebook": {
+          "followers": 8700,
+          "reach": null,
+          "views": 946864,
+          "interactions": 21132,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        "Instagram": {
+          "followers": 939,
+          "reach": 21400,
+          "views": 132200,
+          "interactions": 4500,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        "YouTube": {
+          "followers": 1361,
+          "reach": null,
+          "views": 54004,
+          "interactions": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        "TikTok": {
+          "followers": 609,
+          "reach": null,
+          "views": 60600,
+          "interactions": 891,
+          "likes": 1178,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        }
+      },
+      "competitors": [
+        {
+          "name": "Code Automotive",
+          "profile": "",
+          "date": "2026-08-31",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "Cinoy",
+          "profile": "",
+          "date": "2026-08-31",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "ASX",
+          "profile": "",
+          "date": "2026-08-31",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "JR8",
+          "profile": "",
+          "date": "2026-08-31",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "TechOne",
+          "profile": "",
+          "date": "2026-08-31",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        }
+      ],
+      "posts": [
+        {
+          "id": "2026-08-3",
+          "network": "Instagram",
+          "date": "2026-08-03",
+          "format": "Reels  Tech Luz",
+          "title": "Thiago 09-06",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 691,
+          "likes": 26
+        },
+        {
+          "id": "2026-08-4",
+          "network": "Instagram",
+          "date": "2026-08-05",
+          "format": "Reels Engajamento",
+          "title": "Danton vela",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 473,
+          "likes": 29
+        },
+        {
+          "id": "2026-08-5",
+          "network": "Instagram",
+          "date": "2026-08-06",
+          "format": "Post de noticia",
+          "title": "Robo BYD",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 175,
+          "likes": 9
+        },
+        {
+          "id": "2026-08-6",
+          "network": "TikTok",
+          "date": "2026-08-07",
+          "format": "Reels  Tech Luz",
+          "title": "Nem todo LED",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 608,
+          "likes": 15
+        },
+        {
+          "id": "2026-08-7",
+          "network": "Instagram",
+          "date": "2026-08-10",
+          "format": "Post de noticia",
+          "title": "Feiras de agosto",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 218,
+          "likes": 12
+        },
+        {
+          "id": "2026-08-8",
+          "network": "Instagram",
+          "date": "2026-08-13",
+          "format": "Post de noticia",
+          "title": "California leis de LED",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 169,
+          "likes": 12
+        },
+        {
+          "id": "2026-08-9",
+          "network": "Instagram",
+          "date": "2026-08-14",
+          "format": "Reels  Tech Luz",
+          "title": "Qual LED usar no meu carro?",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 3700,
+          "likes": 49
+        },
+        {
+          "id": "2026-08-10",
+          "network": "Facebook",
+          "date": "2026-08-17",
+          "format": "Reels Tech Luz",
+          "title": "Qual LED escolher",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 734592,
+          "likes": 7734
+        },
+        {
+          "id": "2026-08-11",
+          "network": "Instagram",
+          "date": "2026-08-18",
+          "format": "Post de noticia",
+          "title": "BYD 100 mil",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 277,
+          "likes": 15
+        },
+        {
+          "id": "2026-08-12",
+          "network": "Instagram",
+          "date": "2026-08-19",
+          "format": "Post LED",
+          "title": "Lançamento LED Mini Turbo",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 951,
+          "likes": 35
+        },
+        {
+          "id": "2026-08-13",
+          "network": "Instagram",
+          "date": "2026-08-20",
+          "format": "TBT Feira",
+          "title": "TBT! Mercado Car",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 395,
+          "likes": 22
+        },
+        {
+          "id": "2026-08-14",
+          "network": "Facebook",
+          "date": "2026-08-21",
+          "format": "Post LED",
+          "title": "LED Mini Turbo Batman",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 599,
+          "likes": 2
+        },
+        {
+          "id": "2026-08-15",
+          "network": "Instagram",
+          "date": "2026-08-21",
+          "format": "Reels LED",
+          "title": "Mini LED Tuuuurrrbbbooo",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 343194,
+          "likes": 27
+        },
+        {
+          "id": "2026-08-16",
+          "network": "Instagram",
+          "date": "2026-08-24",
+          "format": "Reels LED",
+          "title": "LED Urban",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 118228,
+          "likes": 28
+        },
+        {
+          "id": "2026-08-17",
+          "network": "Instagram",
+          "date": "2026-08-25",
+          "format": "Post de noticia",
+          "title": "Lançamento LED Urban",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 318,
+          "likes": 22
+        },
+        {
+          "id": "2026-08-18",
+          "network": "Instagram",
+          "date": "2026-08-26",
+          "format": "Post de LED",
+          "title": "LED Urban na rua",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 182,
+          "likes": 14
+        },
+        {
+          "id": "2026-08-19",
+          "network": "Instagram",
+          "date": "2026-08-27",
+          "format": "Post de noticia",
+          "title": "Volta Fiat Multipla",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 283,
+          "likes": 9
+        },
+        {
+          "id": "2026-08-20",
+          "network": "Facebook",
+          "date": "2026-08-27",
+          "format": "Feira e eventos",
+          "title": "Prepare-se Auto Business",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 507,
+          "likes": 3
+        },
+        {
+          "id": "2026-08-21",
+          "network": "Facebook",
+          "date": "2026-08-28",
+          "format": "Reels LED",
+          "title": "É teste de verdade",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1347,
+          "likes": 5
+        },
+        {
+          "id": "2026-08-22",
+          "network": "Facebook",
+          "date": "2026-08-31",
+          "format": "Reels LED",
+          "title": "Se é pra iluminar",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 2266,
+          "likes": 9
+        }
+      ],
+      "highlight": {
+        "src": "/automotive.svg",
+        "type": "image",
+        "fit": "cover",
+        "url": ""
+      }
+    },
+    {
+      "month": "2026-09",
+      "date": "2026-09-30",
+      "complete": true,
+      "updatedAt": "2026-09-30T12:00:00Z",
+      "metrics": {
+        "Facebook": {
+          "followers": 8985,
+          "reach": null,
+          "views": 1076239,
+          "interactions": 24392,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        "Instagram": {
+          "followers": 1156,
+          "reach": 30300,
+          "views": 188000,
+          "interactions": 6300,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        "YouTube": {
+          "followers": 1371,
+          "reach": null,
+          "views": 321190,
+          "interactions": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        "TikTok": {
+          "followers": 664,
+          "reach": null,
+          "views": 73200,
+          "interactions": 1058,
+          "likes": 1336,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        }
+      },
+      "competitors": [
+        {
+          "name": "Code Automotive",
+          "profile": "",
+          "date": "2026-09-30",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "Cinoy",
+          "profile": "",
+          "date": "2026-09-30",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "ASX",
+          "profile": "",
+          "date": "2026-09-30",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "JR8",
+          "profile": "",
+          "date": "2026-09-30",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "TechOne",
+          "profile": "",
+          "date": "2026-09-30",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        }
+      ],
+      "posts": [
+        {
+          "id": "2026-09-3",
+          "network": "Instagram",
+          "date": "2026-09-01",
+          "format": "\"Endo\" Marketing",
+          "title": "Setembro amarelo",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 171,
+          "likes": 13
+        },
+        {
+          "id": "2026-09-4",
+          "network": "Instagram",
+          "date": "2026-09-01",
+          "format": "Post de noticia",
+          "title": "O Mercado brasileiro esta mudando",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 191,
+          "likes": 16
+        },
+        {
+          "id": "2026-09-5",
+          "network": "Facebook",
+          "date": "2026-09-02",
+          "format": "Reels de LED",
+          "title": "Unboxing Mini LED Turbo",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1082,
+          "likes": 1
+        },
+        {
+          "id": "2026-09-6",
+          "network": "Instagram",
+          "date": "2026-09-03",
+          "format": "Post de noticia",
+          "title": "Delorean",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 316,
+          "likes": 17
+        },
+        {
+          "id": "2026-09-7",
+          "network": "Facebook",
+          "date": "2026-09-04",
+          "format": "Reels  Tech Luz",
+          "title": "Extremamente forte",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 2643,
+          "likes": 13
+        },
+        {
+          "id": "2026-09-8",
+          "network": "Facebook",
+          "date": "2026-09-07",
+          "format": "Reels de feira",
+          "title": "RayX está chegando na Expo Peças",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 2700,
+          "likes": 6
+        },
+        {
+          "id": "2026-09-9",
+          "network": "Instagram",
+          "date": "2026-09-08",
+          "format": "Post de noticia",
+          "title": "Evento da HotWeels",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 364,
+          "likes": 13
+        },
+        {
+          "id": "2026-09-10",
+          "network": "Facebook",
+          "date": "2026-09-09",
+          "format": "Reels de LED",
+          "title": "Unboxing LED Urban",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1137,
+          "likes": 6
+        },
+        {
+          "id": "2026-09-11",
+          "network": "Instagram",
+          "date": "2026-09-10",
+          "format": "Post de noticia",
+          "title": "Katchau",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 394,
+          "likes": 18
+        },
+        {
+          "id": "2026-09-12",
+          "network": "YouTube",
+          "date": "2026-09-11",
+          "format": "Reels  Tech Luz",
+          "title": "iluminação forte não",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1459,
+          "likes": 1
+        },
+        {
+          "id": "2026-09-13",
+          "network": "Facebook",
+          "date": "2026-09-14",
+          "format": "Reels de LED",
+          "title": "Bruno Projetor",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 599,
+          "likes": 1
+        },
+        {
+          "id": "2026-09-14",
+          "network": "Instagram",
+          "date": "2026-09-15",
+          "format": "Post de noticia",
+          "title": "XPeng",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 262,
+          "likes": 12
+        },
+        {
+          "id": "2026-09-15",
+          "network": "Instagram",
+          "date": "2026-09-16",
+          "format": "Chico e Vinicius",
+          "title": "Chico e Vinicius EP1",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1168,
+          "likes": 56
+        },
+        {
+          "id": "2026-09-16",
+          "network": "Instagram",
+          "date": "2026-09-17",
+          "format": "Reels de feira",
+          "title": "A RayX vai marcar presença...",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 699,
+          "likes": 11
+        },
+        {
+          "id": "2026-09-17",
+          "network": "Instagram",
+          "date": "2026-09-17",
+          "format": "Post de noticia",
+          "title": "Herbie",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 177,
+          "likes": 21
+        },
+        {
+          "id": "2026-09-18",
+          "network": "Facebook",
+          "date": "2026-09-18",
+          "format": "Reels Tech Luz",
+          "title": "Tamanho compacto",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 649,
+          "likes": 4
+        },
+        {
+          "id": "2026-09-19",
+          "network": "Facebook",
+          "date": "2026-09-21",
+          "format": "Reels Tech Luz",
+          "title": "Pequeno no tamanho...",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 4882,
+          "likes": 35
+        },
+        {
+          "id": "2026-09-20",
+          "network": "Instagram",
+          "date": "2026-09-22",
+          "format": "Post de LED",
+          "title": "Chuva na estrada",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 548,
+          "likes": 28
+        },
+        {
+          "id": "2026-09-21",
+          "network": "Facebook",
+          "date": "2026-09-23",
+          "format": "Reels Tech Luz",
+          "title": "Mini Turbo H19",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 3722,
+          "likes": 21
+        },
+        {
+          "id": "2026-09-22",
+          "network": "Instagram",
+          "date": "2026-09-24",
+          "format": "Post de noticia",
+          "title": "Batmóvel",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 254,
+          "likes": 16
+        },
+        {
+          "id": "2026-09-23",
+          "network": "Instagram",
+          "date": "2026-09-25",
+          "format": "Reels de engajamento",
+          "title": "Vídeo da caixa",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1865,
+          "likes": 47
+        },
+        {
+          "id": "2026-09-24",
+          "network": "Instagram",
+          "date": "2026-09-28",
+          "format": "Reels de engajamento",
+          "title": "O que tem no carro",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 235030,
+          "likes": 31
+        },
+        {
+          "id": "2026-09-25",
+          "network": "Instagram",
+          "date": "2026-09-29",
+          "format": "Banner LED",
+          "title": "Elite Colors",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 732,
+          "likes": 24
+        },
+        {
+          "id": "2026-09-26",
+          "network": "Facebook",
+          "date": "2026-09-30",
+          "format": "Reels Tech Luz",
+          "title": "Tiago chutando LED",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 15481,
+          "likes": 149
+        }
+      ],
+      "highlight": {
+        "src": "/automotive.svg",
+        "type": "image",
+        "fit": "cover",
+        "url": ""
+      }
+    },
+    {
+      "month": "2026-10",
+      "date": "2026-10-30",
+      "complete": true,
+      "updatedAt": "2026-10-30T12:00:00Z",
+      "metrics": {
+        "Facebook": {
+          "followers": 9445,
+          "reach": null,
+          "views": 1242519,
+          "interactions": 27814,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        "Instagram": {
+          "followers": 1279,
+          "reach": 35000,
+          "views": 224600,
+          "interactions": 7500,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        "YouTube": {
+          "followers": 1388,
+          "reach": null,
+          "views": 328668,
+          "interactions": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        "TikTok": {
+          "followers": 719,
+          "reach": null,
+          "views": 85600,
+          "interactions": 1273,
+          "likes": 1546,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        }
+      },
+      "competitors": [
+        {
+          "name": "Code Automotive",
+          "profile": "",
+          "date": "2026-10-30",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "Cinoy",
+          "profile": "",
+          "date": "2026-10-30",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "ASX",
+          "profile": "",
+          "date": "2026-10-30",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "JR8",
+          "profile": "",
+          "date": "2026-10-30",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "TechOne",
+          "profile": "",
+          "date": "2026-10-30",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        }
+      ],
+      "posts": [
+        {
+          "id": "2026-10-3",
+          "network": "Facebook",
+          "date": "2026-10-01",
+          "format": "\"Endo\" Marketing",
+          "title": "Outubro Rosa",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 130,
+          "likes": 0
+        },
+        {
+          "id": "2026-10-4",
+          "network": "Instagram",
+          "date": "2026-10-01",
+          "format": "Feiras e eventos",
+          "title": "TBT\nAuto Business",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 483,
+          "likes": 18
+        },
+        {
+          "id": "2026-10-5",
+          "network": "Facebook",
+          "date": "2026-10-02",
+          "format": "Reels Tech Luz",
+          "title": "Qual LED entrega o resultado",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 41805,
+          "likes": 481
+        },
+        {
+          "id": "2026-10-6",
+          "network": "Facebook",
+          "date": "2026-10-05",
+          "format": "Reels de LED",
+          "title": "Bruno projetores (dnv)",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1964,
+          "likes": 19
+        },
+        {
+          "id": "2026-10-7",
+          "network": "Instagram",
+          "date": "2026-10-06",
+          "format": "Banner de LED",
+          "title": "Mini LED Projetor",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 450,
+          "likes": 20
+        },
+        {
+          "id": "2026-10-8",
+          "network": "Facebook",
+          "date": "2026-10-07",
+          "format": "Reels Tech Luz",
+          "title": "Nem todo LED",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 2423,
+          "likes": 43
+        },
+        {
+          "id": "2026-10-9",
+          "network": "Facebook",
+          "date": "2026-10-08",
+          "format": "Feiras e eventos",
+          "title": "TBT ENASSC",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 907,
+          "likes": 4
+        },
+        {
+          "id": "2026-10-10",
+          "network": "Facebook",
+          "date": "2026-10-09",
+          "format": "Reels de LED",
+          "title": "Bruno Colors",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1558,
+          "likes": 14
+        },
+        {
+          "id": "2026-10-11",
+          "network": "Instagram",
+          "date": "2026-10-13",
+          "format": "Banner de LED",
+          "title": "LED Small",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 717,
+          "likes": 28
+        },
+        {
+          "id": "2026-10-12",
+          "network": "YouTube",
+          "date": "2026-10-14",
+          "format": "Reels de engajamento",
+          "title": "Vídeo da porta",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1600,
+          "likes": 14
+        },
+        {
+          "id": "2026-10-13",
+          "network": "Facebook",
+          "date": "2026-10-15",
+          "format": "Reels de engajamento/LED",
+          "title": "Papo de Garagem 01",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 786,
+          "likes": 8
+        },
+        {
+          "id": "2026-10-14",
+          "network": "Facebook",
+          "date": "2026-10-16",
+          "format": "Reels de LED",
+          "title": "Vídeo Bruno LED Small",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1366,
+          "likes": 13
+        },
+        {
+          "id": "2026-10-15",
+          "network": "Facebook",
+          "date": "2026-10-19",
+          "format": "Reels de LED",
+          "title": "LED Mini",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 810,
+          "likes": 4
+        },
+        {
+          "id": "2026-10-16",
+          "network": "Instagram",
+          "date": "2026-10-20",
+          "format": "Banner de LED",
+          "title": "Banner MAX Projetor",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 402,
+          "likes": 21
+        },
+        {
+          "id": "2026-10-17",
+          "network": "Facebook",
+          "date": "2026-10-21",
+          "format": "Reels de engajamento/LED",
+          "title": "Papo de Garagem 02",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1628,
+          "likes": 6
+        },
+        {
+          "id": "2026-10-18",
+          "network": "YouTube",
+          "date": "2026-10-22",
+          "format": "Vídeo",
+          "title": "Entrevista na Auto Business",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 89,
+          "likes": null
+        },
+        {
+          "id": "2026-10-19",
+          "network": "Facebook",
+          "date": "2026-10-23",
+          "format": "Reels Tech Luz",
+          "title": "Quem dirige a noite sabe",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 30955,
+          "likes": 268
+        },
+        {
+          "id": "2026-10-20",
+          "network": "Facebook",
+          "date": "2026-10-26",
+          "format": "Reels de LED",
+          "title": "Video Bruno D Series",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1144,
+          "likes": 5
+        },
+        {
+          "id": "2026-10-21",
+          "network": "Instagram",
+          "date": "2026-10-27",
+          "format": "Banner Instalador",
+          "title": "Banner Instalador ",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 592,
+          "likes": 15
+        },
+        {
+          "id": "2026-10-22",
+          "network": "Facebook",
+          "date": "2026-10-28",
+          "format": "Reels de LED",
+          "title": "Botão do Bruno",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 556,
+          "likes": 2
+        },
+        {
+          "id": "2026-10-23",
+          "network": "Instagram",
+          "date": "2026-10-29",
+          "format": "Banner Instalador",
+          "title": "Instalador seu proximo cliente...",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 506,
+          "likes": 19
+        },
+        {
+          "id": "2026-10-24",
+          "network": "Facebook",
+          "date": "2026-10-30",
+          "format": "Reels  Tech Luz",
+          "title": "É só acender para entender...",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 4861,
+          "likes": 41
+        }
+      ],
+      "highlight": {
+        "src": "/automotive.svg",
+        "type": "image",
+        "fit": "cover",
+        "url": ""
+      }
+    },
+    {
+      "month": "2026-11",
+      "date": "2026-11-13",
+      "complete": false,
+      "updatedAt": "2026-11-13T12:00:00Z",
+      "metrics": {
+        "Facebook": {
+          "followers": 12855,
+          "reach": null,
+          "views": 1703673,
+          "interactions": 36796,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        "Instagram": {
+          "followers": 1447,
+          "reach": 36800,
+          "views": 241900,
+          "interactions": 7900,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        "YouTube": {
+          "followers": 1391,
+          "reach": null,
+          "views": 331000,
+          "interactions": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        },
+        "TikTok": {
+          "followers": 734,
+          "reach": null,
+          "views": 89600,
+          "interactions": 1271,
+          "likes": 1622,
+          "comments": null,
+          "shares": null,
+          "saves": null
+        }
+      },
+      "competitors": [
+        {
+          "name": "Code Automotive",
+          "profile": "",
+          "date": "2026-11-13",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "Cinoy",
+          "profile": "",
+          "date": "2026-11-13",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "ASX",
+          "profile": "",
+          "date": "2026-11-13",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "JR8",
+          "profile": "",
+          "date": "2026-11-13",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        },
+        {
+          "name": "TechOne",
+          "profile": "",
+          "date": "2026-11-13",
+          "followers": {
+            "Facebook": null,
+            "Instagram": null,
+            "YouTube": null,
+            "TikTok": null
+          }
+        }
+      ],
+      "posts": [
+        {
+          "id": "2026-11-3",
+          "network": "Facebook",
+          "date": "2026-11-03",
+          "format": "Reels  Tech Luz",
+          "title": "Da agua pro vinho",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 2844,
+          "likes": 13
+        },
+        {
+          "id": "2026-11-4",
+          "network": "Facebook",
+          "date": "2026-11-04",
+          "format": "\"Endo\" Marketing",
+          "title": "Novembro azul",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 177,
+          "likes": 0
+        },
+        {
+          "id": "2026-11-5",
+          "network": "Instagram",
+          "date": "2026-11-05",
+          "format": "Post de noticia",
+          "title": "Carrossel instalador parceiro",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 662,
+          "likes": 20
+        },
+        {
+          "id": "2026-11-6",
+          "network": "Facebook",
+          "date": "2026-11-06",
+          "format": "Reels de LED",
+          "title": "Teste de resistencia LED Urban",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1408,
+          "likes": 9
+        }
+      ],
+      "highlight": {
+        "src": "/destaque-led.png",
+        "type": "image",
+        "fit": "cover",
+        "url": "",
+        "views": 392000,
+        "title": "Qual o LED ideal para o seu veículo?"
+      }
+    }
+  ]
+}

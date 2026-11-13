@@ -1,12 +1,12 @@
 export const networks = ['Facebook','Instagram','YouTube','TikTok'] as const;
 export type Network = typeof networks[number];
-export type Metrics = {followers:number;reach:number|null;views:number|null;likes:number|null;comments:number|null;shares:number|null;saves:number|null};
+export type Metrics = {followers:number;reach:number|null;views:number|null;interactions?:number|null;likes:number|null;comments:number|null;shares:number|null;saves:number|null};
 export type Post = {id:string;network:Network;date:string;format:string;title:string;url:string;media:string;views:number|null;likes:number|null};
 export type Month = {month:string;date:string;complete:boolean;metrics:Record<Network,Metrics>;competitors:{name:string;profile:string;date:string;followers:Record<Network,number|null>}[];posts:Post[];highlight:{src:string;type:'image'|'video';fit:'cover'|'contain';url:string;views?:number;title?:string};updatedAt:string};
 export type Data = {source?:'spreadsheet';logo:string;months:Month[]};
 export const fmt=(n:number|null|undefined)=>n==null?'Não informado':new Intl.NumberFormat('pt-BR').format(n);
 export const total=(m:Month)=>networks.reduce((s,n)=>s+m.metrics[n].followers,0);
-export const interactions=(m:Metrics)=>{const a=[m.likes,m.comments,m.shares,m.saves].filter(v=>v!==null);return a.length?a.reduce((s,v)=>s+v,0):null};
+export const interactions=(m:Metrics)=>{if(m.interactions!=null)return m.interactions;const a=[m.likes,m.comments,m.shares,m.saves].filter(v=>v!==null);return a.length?a.reduce((s,v)=>s+v,0):null};
 export const growth=(m:Month,previous?:Month)=>{const d=new Date(m.month+'-01T12:00:00Z');d.setUTCMonth(d.getUTCMonth()-1);return previous&&m.complete&&previous.complete&&previous.month===d.toISOString().slice(0,7)?total(m)-total(previous):null};
 export const percent=(now:number,before:number|null)=>before&&before>0?(now-before)/before*100:null;
 export const comparable=(m:Month)=>m.competitors.filter(c=>c.date===m.date&&networks.every(n=>c.followers[n]!==null));
