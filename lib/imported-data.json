@@ -1923,8 +1923,13 @@
         "fit": "cover",
         "url": "",
         "views": 392000,
+        "likes": 3400,
+        "comments": 701,
+        "shares": 98,
         "title": "Qual o LED ideal para o seu veículo?"
       }
     }
-  ]
+  ],
+  "allTimePostLikes": 11344,
+  "allTimePostComments": 2275
 }

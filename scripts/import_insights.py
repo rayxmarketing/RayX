@@ -141,7 +141,8 @@ for month in ("2026-08", "2026-09", "2026-10", "2026-11"):
     highlight = {"src": "/destaque-led.png" if is_november else "/automotive.svg",
                  "type": "image", "fit": "cover", "url": ""}
     if is_november:
-        highlight.update({"views": 392000, "title": "Qual o LED ideal para o seu veículo?"})
+        highlight.update({"views": 392000, "likes": 3400, "comments": 701, "shares": 98,
+                          "title": "Qual o LED ideal para o seu veículo?"})
     months.append({
         "month": month, "date": date.date().isoformat(), "complete": not is_november,
         "updatedAt": date.replace(hour=12, tzinfo=timezone.utc).isoformat().replace("+00:00", "Z"),
@@ -155,7 +156,11 @@ for month in ("2026-08", "2026-09", "2026-10", "2026-11"):
         "posts": posts_for(month), "highlight": highlight,
     })
 
-data = {"logo": "/rayx-logo.png", "source": "spreadsheet", "months": months}
+all_time_posts = [post for month in ("2026-07", "2026-08", "2026-09", "2026-10", "2026-11")
+                  for post in posts_for(month)]
+data = {"logo": "/rayx-logo.png", "source": "spreadsheet", "months": months,
+        "allTimePostLikes": sum(post["totalLikes"] for post in all_time_posts),
+        "allTimePostComments": sum(post["totalComments"] for post in all_time_posts)}
 (ROOT / "lib/imported-data.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
 (ROOT / "lib/observations.json").write_text(json.dumps(observations, ensure_ascii=False, indent=2) + "\n")
 print(f"Importados {len(months)} meses, {len(observations)} registros e {sum(len(m['posts']) for m in months)} posts")
