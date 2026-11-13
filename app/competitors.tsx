@@ -2,8 +2,10 @@
 import {useEffect,useState} from 'react';
 import CountUp from './count-up';
 import {Month,Network,networks,total} from '../lib/data';
+import {useI18n} from './i18n';
 
 export default function Competitors({month,metric}:{month:Month;metric:'total'|Network}) {
+ const {t,dateLocale}=useI18n();
  const [expanded,setExpanded]=useState(false);
  useEffect(()=>{
   const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -23,11 +25,11 @@ export default function Competitors({month,metric}:{month:Month;metric:'total'|N
  ].sort((a,b)=>(b.value??-1)-(a.value??-1));
  const maximum=Math.max(1,...rows.map(row=>row.value??0));
  return <section className="competitors">
-  <h2>Concorrentes <span>· {metric==='total'?'Total':metric}</span></h2>
+  <h2>{t('Concorrentes')} <span>· {metric==='total'?t('Total'):metric}</span></h2>
   <div className="bars">{rows.map((row,index)=><div className="bar-row" key={row.name}>
    <span className={row.name==='RayX'?'rayx-competitor-name':undefined}>{row.name}</span><div className="track"><div className="bar competitor-bar" style={{width:expanded?`${(row.value??0)/maximum*100}%`:'0%',backgroundColor:row.color,transitionDelay:`${index*90}ms`,minWidth:expanded&&row.value?4:0}}/></div>
-   <strong className={row.value===null?'missing':undefined}>{row.value===null?'Não informado':<CountUp value={row.value}/>}</strong>
+   <strong className={row.value===null?'missing':undefined}>{row.value===null?t('Não informado'):<CountUp value={row.value}/>}</strong>
   </div>)}</div>
-  <small>{metric==='total'?'Total das quatro redes':'Seguidores / inscritos por rede'} · referência {new Date(month.date+'T12:00:00').toLocaleDateString('pt-BR')}</small>
+  <small>{t(metric==='total'?'Total das quatro redes':'Seguidores / inscritos por rede')} · {t('referência')} {new Date(month.date+'T12:00:00').toLocaleDateString(dateLocale)}</small>
  </section>;
 }
