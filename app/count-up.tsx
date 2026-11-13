@@ -17,7 +17,7 @@ export default function CountUp({value,celebrate=false}:{value:number;celebrate?
   const start=performance.now();
   element.textContent=fmt(0);
   const tick=(now:number)=>{
-   const progress=Math.min(1,(now-start)/700);
+   const progress=Math.min(1,(now-start)/1050);
    const eased=1-Math.pow(1-progress,3);
    element.textContent=fmt(Math.round(value*eased));
    if(progress<1)frame=requestAnimationFrame(tick);

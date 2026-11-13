@@ -11,7 +11,7 @@ export default function PostEngagement({data}:{data:Data}) {
  return <section className="post-engagement">
   <h2>{t('Reações nos conteúdos')}</h2>
   <div className="engagement-totals">
-   <div><small>{t('Visualizações')}</small><strong><CountUp value={views}/></strong></div>
+   <div><small>{t('Visualizações')}</small><strong><CountUp value={views} celebrate/></strong></div>
    <div><small>{t('Curtidas')}</small><strong><CountUp value={likes}/></strong></div>
    <div><small>{t('Comentários')}</small><strong><CountUp value={comments}/></strong></div>
   </div>
