@@ -9,7 +9,7 @@ test('planilha real preserva períodos, totais e concorrentes',()=>{const d=impo
 test('destaque preserva todas as reações informadas',()=>{const november=importedData().months.find(m=>m.month==='2026-11')!;assert.deepEqual([november.highlight.views,november.highlight.likes,november.highlight.comments,november.highlight.shares],[394783,3485,711,98])});
 test('reações históricas incluem todos os posts desde julho',()=>{const data=importedData();assert.deepEqual([data.allTimePostLikes,data.allTimePostComments],[14829,2986])});
 test('visualizações históricas somam todos os posts e todas as redes',()=>{const data=importedData();assert.equal(data.allTimePostViews,2068111)});
-test('conteúdos em destaque usam somas das quatro redes, sem médias',()=>{assert.deepEqual(featuredContents.map(post=>[post.views,post.likes,post.comments]),[[235714,34,12],[737419,7800,1828],[43284,510,63]])});
+test('conteúdos em destaque usam somas das quatro redes, sem médias',()=>{assert.deepEqual(featuredContents.map(post=>[post.views,post.likes,post.comments]),[[235714,34,12],[833314,9001,7552],[43284,510,63]])});
 import update from '../lib/update-2026-11-16.json';
 test('atualização de 16/11 preserva métricas, somas por rede e concorrentes',()=>{
  const data=importedData(),month=data.months.find(m=>m.month==='2026-11')!;

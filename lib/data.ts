@@ -6,7 +6,7 @@ export type Month = {month:string;date:string;complete:boolean;metrics:Record<Ne
 export type Data = {source?:'spreadsheet';logo:string;months:Month[];allTimePostViews?:number;allTimePostLikes?:number;allTimePostComments?:number};
 export const featuredContents=[
  {title:'O que tem no carro',format:'Reels de engajamento',date:'2026-09-28',image:'/featured-o-que-tem-no-carro.jpg',views:235714,likes:34,comments:12},
- {title:'Qual LED escolher',format:'Reels Tech Luz',date:'2026-08-17',image:'/featured-qual-led-escolher.jpg',views:737419,likes:7800,comments:1828},
+ {title:'Qual LED escolher',format:'Reels Tech Luz',date:'2026-08-17',image:'/featured-qual-led-escolher.jpg',views:833314,likes:9001,comments:7552},
  {title:'Qual LED entrega o resultado',format:'Reels Tech Luz',date:'2026-10-02',image:'/featured-qual-led-resultado.jpg',views:43284,likes:510,comments:63},
 ] as const;
 export const fmt=(n:number|null|undefined)=>n==null?'Não informado':new Intl.NumberFormat('pt-BR').format(n);
