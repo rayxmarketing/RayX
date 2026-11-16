@@ -1,0 +1,305 @@
+{
+  "referenceDate": "2026-11-16",
+  "source": "Atualização RayX e seguidores-concorrentes-rayx.pdf (16/11/2026 08:03 Brasília)",
+  "metrics": {
+    "Facebook": {
+      "followers": 12883,
+      "reach": null,
+      "views": 1714756,
+      "interactions": 37110,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null
+    },
+    "Instagram": {
+      "followers": 1453,
+      "reach": 37000,
+      "views": 243800,
+      "interactions": 8000,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null
+    },
+    "YouTube": {
+      "followers": 1393,
+      "reach": null,
+      "views": 332800,
+      "interactions": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null
+    },
+    "TikTok": {
+      "followers": 739,
+      "reach": null,
+      "views": 91300,
+      "interactions": 1369,
+      "likes": 1649,
+      "comments": null,
+      "shares": null,
+      "saves": null
+    }
+  },
+  "observation": {
+    "month": "2026-11",
+    "date": "2026-11-16",
+    "values": {
+      "Instagram · Views": 243800,
+      "Instagram · Alcance": 37000,
+      "Instagram · Interações": 8000,
+      "Instagram · Visitas": 6700,
+      "Instagram · Seguidores": 1453,
+      "Facebook · Views": 1714756,
+      "Facebook · Engajamento": 37110,
+      "Facebook · Seguidores": 12883,
+      "TikTok · Views": 91300,
+      "TikTok · Views Perfil": 1200,
+      "TikTok · Interações": 1369,
+      "TikTok · Curtidas": 1649,
+      "TikTok · Seguidores": 739,
+      "YouTube · Views": 332800,
+      "YouTube · Tempo 48h": 367,
+      "YouTube · Tempo": 4600,
+      "YouTube · Inscritos": 1393
+    }
+  },
+  "highlight": {
+    "src": "/destaque-led.png",
+    "type": "image",
+    "fit": "cover",
+    "url": "",
+    "views": 394783,
+    "likes": 3485,
+    "comments": 711,
+    "shares": 98,
+    "title": "Qual o LED ideal para o veículo?"
+  },
+  "highlightNetworks": {
+    "Instagram": {
+      "views": 1023,
+      "likes": 24,
+      "comments": 3
+    },
+    "Facebook": {
+      "views": 392888,
+      "likes": 3449,
+      "comments": 706
+    },
+    "TikTok": {
+      "views": 773,
+      "likes": 12,
+      "comments": 2
+    },
+    "YouTube": {
+      "views": 99,
+      "likes": 0,
+      "comments": 0
+    }
+  },
+  "competitors": [
+    {
+      "name": "Uppertech",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 65475,
+      "color": "#E5484D",
+      "followers": {
+        "Instagram": 64800,
+        "Facebook": 0,
+        "TikTok": 619,
+        "YouTube": 56
+      }
+    },
+    {
+      "name": "Tiger Auto",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 14300,
+      "color": "#268CFF",
+      "followers": {
+        "Instagram": 11600,
+        "Facebook": 2700,
+        "TikTok": 0,
+        "YouTube": 0
+      }
+    },
+    {
+      "name": "E Tech",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 1390,
+      "color": "#E5484D",
+      "followers": {
+        "Instagram": 1390,
+        "Facebook": 0,
+        "TikTok": 0,
+        "YouTube": 0
+      }
+    },
+    {
+      "name": "Tarponn",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 13211,
+      "color": "#F4C430",
+      "followers": {
+        "Instagram": 11600,
+        "Facebook": 618,
+        "TikTok": 0,
+        "YouTube": 993
+      }
+    },
+    {
+      "name": "FP Import",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 5817,
+      "color": "#E5484D",
+      "followers": {
+        "Instagram": 4919,
+        "Facebook": 0,
+        "TikTok": 0,
+        "YouTube": 898
+      }
+    },
+    {
+      "name": "First Option",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 2041,
+      "color": "#34C759",
+      "followers": {
+        "Instagram": 1538,
+        "Facebook": 0,
+        "TikTok": 253,
+        "YouTube": 250
+      }
+    },
+    {
+      "name": "Alemar Group",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 48338,
+      "color": "#268CFF",
+      "followers": {
+        "Instagram": 45500,
+        "Facebook": 0,
+        "TikTok": 2741,
+        "YouTube": 97
+      }
+    },
+    {
+      "name": "Force One",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 11500,
+      "color": "#F5F5F5",
+      "followers": {
+        "Instagram": 11500,
+        "Facebook": 0,
+        "TikTok": 0,
+        "YouTube": 0
+      }
+    },
+    {
+      "name": "Suits",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 1551,
+      "color": "#A855F7",
+      "followers": {
+        "Instagram": 890,
+        "Facebook": 0,
+        "TikTok": 0,
+        "YouTube": 661
+      }
+    },
+    {
+      "name": "Somma Films Wintech",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 11180,
+      "color": "#E5484D",
+      "followers": {
+        "Instagram": 10500,
+        "Facebook": 680,
+        "TikTok": 0,
+        "YouTube": 0
+      }
+    },
+    {
+      "name": "Code Automotive",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 11381,
+      "color": "#F4C430",
+      "followers": {
+        "Instagram": 7631,
+        "Facebook": 679,
+        "TikTok": 2262,
+        "YouTube": 809
+      }
+    },
+    {
+      "name": "Cinoy",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 16572,
+      "color": "#E5484D",
+      "followers": {
+        "Instagram": 15100,
+        "Facebook": 392,
+        "TikTok": 0,
+        "YouTube": 1080
+      }
+    },
+    {
+      "name": "JR8",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 30372,
+      "color": "#E5484D",
+      "followers": {
+        "Instagram": 27700,
+        "Facebook": 1400,
+        "TikTok": 172,
+        "YouTube": 1100
+      }
+    },
+    {
+      "name": "Shock Light",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 24471,
+      "color": "#268CFF",
+      "followers": {
+        "Instagram": 20600,
+        "Facebook": 2600,
+        "TikTok": 11,
+        "YouTube": 1260
+      }
+    },
+    {
+      "name": "ASX",
+      "profile": "",
+      "date": "2026-11-16",
+      "total": 68000,
+      "color": "#F5F5F5",
+      "followers": {
+        "Instagram": 68000,
+        "Facebook": 0,
+        "TikTok": 0,
+        "YouTube": 0
+      }
+    }
+  ],
+  "historical": {
+    "allTimePostViews": 2068111,
+    "allTimePostLikes": 14829,
+    "allTimePostComments": 2986
+  },
+  "notes": "Facebook de Somma Films Wintech (680) e Shock Light (2600) preservado da referência anterior por solicitação do usuário; demais dados dos concorrentes coletados em 16/11/2026."
+}

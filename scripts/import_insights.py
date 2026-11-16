@@ -164,6 +164,9 @@ data = {"logo": "/rayx-logo.png", "source": "spreadsheet", "months": months,
         "allTimePostViews": sum(post["totalViews"] for post in all_time_posts),
         "allTimePostLikes": sum(post["totalLikes"] for post in all_time_posts),
         "allTimePostComments": sum(post["totalComments"] for post in all_time_posts)}
+from apply_update import apply_update
+apply_update(data, observations)
+
 (ROOT / "lib/imported-data.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
 (ROOT / "lib/observations.json").write_text(json.dumps(observations, ensure_ascii=False, indent=2) + "\n")
 print(f"Importados {len(months)} meses, {len(observations)} registros e {sum(len(m['posts']) for m in months)} posts")
