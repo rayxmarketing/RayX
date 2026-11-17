@@ -5,10 +5,10 @@ test('somente administrador edita',()=>{assert.equal(canEdit('viewer'),false);as
 test('validação rejeita negativos',()=>{const d=fixtures();d.months[0].metrics.Facebook.followers=-1;assert.throws(()=>validate(d))});
 import {importedData} from '../lib/imported';
 import observations from '../lib/observations.json';
-test('planilha real preserva períodos, totais e concorrentes',()=>{const d=importedData();validate(d);const november=d.months.find(m=>m.month==='2026-11')!;assert.equal(d.months.length,4);assert.equal(total(november),16474);assert.equal(november.metrics.Instagram.followers,1459);assert.equal(november.complete,false);assert.equal(november.highlight.views,394783);assert.equal(observations.length,169);const latest=observations.find(row=>row.date==='2026-11-16')!;assert.equal(latest.values['TikTok · Views'],91300);assert.equal(latest.values['Instagram · Views'],243800);assert.equal(november.metrics.Facebook.interactions,37110);assert.equal(november.metrics.Instagram.reach,37000);assert.equal(november.posts.reduce((sum,p)=>sum+(p.totalLikes??0),0),120);assert.equal(november.posts.reduce((sum,p)=>sum+(p.totalComments??0),0),12);assert.equal(november.competitors.length,15);const uppertech=november.competitors.find(c=>c.name==='Uppertech')!;assert.deepEqual([uppertech.followers.Instagram,uppertech.followers.Facebook,uppertech.followers.TikTok,uppertech.followers.YouTube,uppertech.total],[64800,0,619,56,65475]);const asx=november.competitors.find(c=>c.name==='ASX')!;assert.deepEqual([asx.followers.Instagram,asx.followers.Facebook,asx.followers.TikTok,asx.followers.YouTube,asx.total,asx.color],[68000,0,0,0,68000,'#F5F5F5']);const code=november.competitors.find(c=>c.name==='Code Automotive')!;assert.deepEqual([code.followers.Instagram,code.followers.Facebook,code.followers.TikTok,code.followers.YouTube,code.total],[7631,679,2262,809,11381])});
+test('planilha real preserva períodos, totais e concorrentes',()=>{const d=importedData();validate(d);const november=d.months.find(m=>m.month==='2026-11')!;assert.equal(d.months.length,4);assert.equal(total(november),16474);assert.equal(november.metrics.Instagram.followers,1459);assert.equal(november.complete,false);assert.equal(november.highlight.views,394783);assert.equal(observations.length,169);const latest=observations.find(row=>row.date==='2026-11-16')!;assert.equal(latest.values['TikTok · Views'],91300);assert.equal(latest.values['Instagram · Views'],243800);assert.equal(november.metrics.Facebook.interactions,37110);assert.equal(november.metrics.Instagram.reach,37000);assert.equal(november.posts.reduce((sum,p)=>sum+(p.totalLikes??0),0),3624);assert.equal(november.posts.reduce((sum,p)=>sum+(p.totalComments??0),0),731);assert.equal(november.competitors.length,15);const uppertech=november.competitors.find(c=>c.name==='Uppertech')!;assert.deepEqual([uppertech.followers.Instagram,uppertech.followers.Facebook,uppertech.followers.TikTok,uppertech.followers.YouTube,uppertech.total],[64800,0,619,56,65475]);const asx=november.competitors.find(c=>c.name==='ASX')!;assert.deepEqual([asx.followers.Instagram,asx.followers.Facebook,asx.followers.TikTok,asx.followers.YouTube,asx.total,asx.color],[68000,0,0,0,68000,'#F5F5F5']);const code=november.competitors.find(c=>c.name==='Code Automotive')!;assert.deepEqual([code.followers.Instagram,code.followers.Facebook,code.followers.TikTok,code.followers.YouTube,code.total],[7631,679,2262,809,11381])});
 test('destaque preserva todas as reações informadas',()=>{const november=importedData().months.find(m=>m.month==='2026-11')!;assert.deepEqual([november.highlight.views,november.highlight.likes,november.highlight.comments,november.highlight.shares],[394783,3485,711,98])});
-test('reações históricas incluem todos os posts desde julho',()=>{const data=importedData();assert.deepEqual([data.allTimePostLikes,data.allTimePostComments],[14829,2986])});
-test('visualizações históricas somam todos os posts e todas as redes',()=>{const data=importedData();assert.equal(data.allTimePostViews,2068111)});
+test('reações históricas incluem todos os posts desde julho',()=>{const data=importedData();assert.deepEqual([data.allTimePostLikes,data.allTimePostComments],[14848,2994])});
+test('visualizações históricas somam todos os posts e todas as redes',()=>{const data=importedData();assert.equal(data.allTimePostViews,2070269)});
 test('conteúdos em destaque usam somas das quatro redes, sem médias',()=>{assert.deepEqual(featuredContents.map(post=>[post.views,post.likes,post.comments]),[[235714,34,12],[833314,9001,7552],[43284,510,63]])});
 import update from '../lib/update-2026-11-16.json';
 test('atualização de 16/11 preserva métricas, somas por rede e concorrentes',()=>{
@@ -17,10 +17,25 @@ test('atualização de 16/11 preserva métricas, somas por rede e concorrentes',
  assert.deepEqual(month.metrics,update.metrics);
  assert.deepEqual(observations.find(r=>r.date===month.date),update.observation);
  for(const metric of ['views','likes','comments'] as const) assert.equal(month.highlight[metric],Object.values(update.highlightNetworks).reduce((sum,n)=>sum+n[metric],0));
- assert.equal(data.allTimePostViews,1673328+month.highlight.views!);
- assert.equal(data.allTimePostLikes,11344+month.highlight.likes!);
- assert.equal(data.allTimePostComments,2275+month.highlight.comments!);
+ assert.equal(data.allTimePostViews,1673328+month.highlight.views!+2158);
+ assert.equal(data.allTimePostLikes,11344+month.highlight.likes!+19);
+ assert.equal(data.allTimePostComments,2275+month.highlight.comments!+8);
  for(const c of month.competitors){assert.equal(c.date,month.date);assert.equal(c.total,Object.values(c.followers).reduce<number>((sum,v)=>sum+(v??0),0));}
  assert.equal(month.competitors.find(c=>c.name==='Somma Films Wintech')!.followers.Facebook,680);
  assert.equal(month.competitors.find(c=>c.name==='Shock Light')!.followers.Facebook,2600);
+});
+
+test('planilha de 17/11 soma as redes dos seis posts sem duplicar o destaque',()=>{
+ const data=importedData(),posts=data.months.find(m=>m.month==='2026-11')!.posts;
+ assert.equal(posts.length,6);
+ assert.equal(new Set(posts.map(p=>p.id)).size,6);
+ assert.deepEqual(posts.map(p=>[p.totalViews,p.totalLikes,p.totalComments]),[
+  [4849,51,4],[310,11,0],[953,20,0],[2562,38,8],[394783,3485,711],[2158,19,8]
+ ]);
+ const blackFriday=posts.find(p=>p.title==='Black Friday Small')!;
+ assert.equal(blackFriday.date,'2026-11-10');
+ assert.equal(blackFriday.views,1649);assert.equal(blackFriday.likes,2);
+ assert.equal(data.allTimePostViews,2068111+509+1649);
+ assert.equal(data.allTimePostLikes,14829+17+2);
+ assert.equal(data.allTimePostComments,2986+0+8);
 });

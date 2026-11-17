@@ -20,3 +20,13 @@ def apply_update(data, observations):
         observations.sort(key=lambda r: r['date'])
     else:
         row.update(copy.deepcopy(snapshot['observation']))
+
+    # Inclui os posts confirmados em 17/11 sem duplicar o destaque nos históricos.
+    posts_update = json.loads((Path(__file__).resolve().parents[1] / 'lib/update-posts-2026-11-17.json').read_text())
+    for post in posts_update['posts']:
+        existing = next((p for p in month['posts'] if p['id'] == post['id']), None)
+        if existing is None:
+            month['posts'].append(copy.deepcopy(post))
+        else:
+            existing.update(copy.deepcopy(post))
+    data.update(posts_update['historical'])

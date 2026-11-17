@@ -1985,6 +1985,34 @@
           "totalViews": 2562,
           "totalLikes": 38,
           "totalComments": 8
+        },
+        {
+          "id": "2026-11-7",
+          "network": "Facebook",
+          "date": "2026-11-09",
+          "format": "Reels Tech Luz",
+          "title": "Qual o LED ideal para o veículo?",
+          "url": "",
+          "media": "/destaque-led.png",
+          "views": 392888,
+          "likes": 3449,
+          "totalViews": 394783,
+          "totalLikes": 3485,
+          "totalComments": 711
+        },
+        {
+          "id": "2026-11-8",
+          "network": "Facebook",
+          "date": "2026-11-10",
+          "format": "Post de LED",
+          "title": "Black Friday Small",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1649,
+          "likes": 2,
+          "totalViews": 2158,
+          "totalLikes": 19,
+          "totalComments": 8
         }
       ],
       "highlight": {
@@ -2000,7 +2028,7 @@
       }
     }
   ],
-  "allTimePostViews": 2068111,
-  "allTimePostLikes": 14829,
-  "allTimePostComments": 2986
+  "allTimePostViews": 2070269,
+  "allTimePostLikes": 14848,
+  "allTimePostComments": 2994
 }
