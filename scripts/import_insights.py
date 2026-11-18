@@ -7,6 +7,8 @@ from pathlib import Path
 
 from openpyxl import load_workbook
 
+from apply_update import apply_update, snapshot
+
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = Path(sys.argv[1])
 MONTH_NAMES = {
@@ -126,6 +128,15 @@ def posts_for(month):
 months = []
 for month in ("2026-08", "2026-09", "2026-10", "2026-11"):
     date, values = latest[month]
+    if month == "2026-11":
+        # Fill gaps by measurement date so newer workbook values always win.
+        previous = snapshot("update-2026-11-16.json")
+        current = snapshot("update-2026-11-18.json")
+        confirmed = [previous["observation"], *current["observations"]]
+        rows = [row for row in observations if row["month"] == month] + confirmed
+        values = {}
+        for row in sorted(rows, key=lambda r: r["date"]):
+            values.update({key: value for key, value in row["values"].items() if value is not None})
     metrics = {}
     for network in ("Facebook", "Instagram", "YouTube", "TikTok"):
         followers = metric(values, network, "Seguidores", "Inscritos")
@@ -139,6 +150,15 @@ for month in ("2026-08", "2026-09", "2026-10", "2026-11"):
             "likes": metric(values, network, "Curtidas"),
             "comments": None, "shares": None, "saves": None,
         }
+    for network, labels in {
+        "Instagram": {"visits": "Visitas"},
+        "TikTok": {"profileViews": "Views Perfil"},
+        "YouTube": {"watchTime48h": "Tempo 48h", "watchTime": "Tempo"},
+    }.items():
+        for field, label in labels.items():
+            value = metric(values, network, label)
+            if value is not None:
+                metrics[network][field] = value
     is_november = month == "2026-11"
     highlight = {"src": "/destaque-led.png" if is_november else "/automotive.svg",
                  "type": "image", "fit": "cover", "url": ""}
@@ -164,7 +184,6 @@ data = {"logo": "/rayx-logo.png", "source": "spreadsheet", "months": months,
         "allTimePostViews": sum(post["totalViews"] for post in all_time_posts),
         "allTimePostLikes": sum(post["totalLikes"] for post in all_time_posts),
         "allTimePostComments": sum(post["totalComments"] for post in all_time_posts)}
-from apply_update import apply_update
 apply_update(data, observations)
 
 (ROOT / "lib/imported-data.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")

@@ -1,8 +1,9 @@
 export const networks = ['Facebook','Instagram','YouTube','TikTok'] as const;
 export type Network = typeof networks[number];
-export type Metrics = {followers:number;reach:number|null;views:number|null;interactions?:number|null;likes:number|null;comments:number|null;shares:number|null;saves:number|null};
-export type Post = {id:string;network:Network;date:string;format:string;title:string;url:string;media:string;views:number|null;likes:number|null;totalViews?:number|null;totalLikes?:number|null;totalComments?:number|null};
-export type Month = {month:string;date:string;complete:boolean;metrics:Record<Network,Metrics>;competitors:{name:string;profile:string;date:string;followers:Record<Network,number|null>;total?:number|null;color?:string}[];posts:Post[];highlight:{src:string;type:'image'|'video';fit:'cover'|'contain';url:string;views?:number;likes?:number;comments?:number;shares?:number;title?:string};updatedAt:string};
+export type Metrics = {followers:number;reach:number|null;views:number|null;interactions?:number|null;visits?:number|null;profileViews?:number|null;watchTime48h?:number|null;watchTime?:number|null;likes:number|null;comments:number|null;shares:number|null;saves:number|null};
+type PostNetworkMetrics = {views:number;likes:number;comments:number;reach?:number};
+export type Post = {id:string;network:Network;date:string;format:string;title:string;url:string;media:string;views:number|null;likes:number|null;totalViews?:number|null;totalLikes?:number|null;totalComments?:number|null;measuredAt?:string;networkMetrics?:Partial<Record<Network,PostNetworkMetrics>>};
+export type Month = {month:string;date:string;complete:boolean;metrics:Record<Network,Metrics>;competitors:{name:string;profile:string;date:string;followers:Record<Network,number|null>;followerDates?:Partial<Record<Network,string>>;total?:number|null;color?:string}[];posts:Post[];highlight:{src:string;type:'image'|'video';fit:'cover'|'contain';url:string;views?:number;likes?:number;comments?:number;shares?:number;title?:string};updatedAt:string};
 export type Data = {source?:'spreadsheet';logo:string;months:Month[];allTimePostViews?:number;allTimePostLikes?:number;allTimePostComments?:number};
 export const featuredContents=[
  {title:'O que tem no carro',format:'Reels de engajamento',date:'2026-09-28',image:'/featured-o-que-tem-no-carro.jpg',views:235714,likes:34,comments:12},

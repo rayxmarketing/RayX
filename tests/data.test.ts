@@ -3,39 +3,79 @@ test('fechamentos e crescimento',()=>{const d=fixtures();assert.equal(total(d.mo
 test('ausências e períodos incomparáveis',()=>{const d=fixtures();assert.equal(percent(10,0),null);assert.equal(growth(d.months[2],d.months[0]),null);d.months[2].complete=false;assert.equal(growth(d.months[2],d.months[1]),null);d.months[2].competitors[0].followers.Facebook=null;assert.equal(comparable(d.months[2]).length,1)});
 test('somente administrador edita',()=>{assert.equal(canEdit('viewer'),false);assert.equal(canEdit(null),false);assert.equal(canEdit('admin'),true)});
 test('validação rejeita negativos',()=>{const d=fixtures();d.months[0].metrics.Facebook.followers=-1;assert.throws(()=>validate(d))});
-import {importedData} from '../lib/imported';
+import {importedData,refreshNovemberUpdate} from '../lib/imported';
 import observations from '../lib/observations.json';
-test('planilha real preserva períodos, totais e concorrentes',()=>{const d=importedData();validate(d);const november=d.months.find(m=>m.month==='2026-11')!;assert.equal(d.months.length,4);assert.equal(total(november),16474);assert.equal(november.metrics.Instagram.followers,1459);assert.equal(november.complete,false);assert.equal(november.highlight.views,394783);assert.equal(observations.length,169);const latest=observations.find(row=>row.date==='2026-11-16')!;assert.equal(latest.values['TikTok · Views'],91300);assert.equal(latest.values['Instagram · Views'],243800);assert.equal(november.metrics.Facebook.interactions,37110);assert.equal(november.metrics.Instagram.reach,37000);assert.equal(november.posts.reduce((sum,p)=>sum+(p.totalLikes??0),0),3624);assert.equal(november.posts.reduce((sum,p)=>sum+(p.totalComments??0),0),731);assert.equal(november.competitors.length,15);const uppertech=november.competitors.find(c=>c.name==='Uppertech')!;assert.deepEqual([uppertech.followers.Instagram,uppertech.followers.Facebook,uppertech.followers.TikTok,uppertech.followers.YouTube,uppertech.total],[64800,0,619,56,65475]);const asx=november.competitors.find(c=>c.name==='ASX')!;assert.deepEqual([asx.followers.Instagram,asx.followers.Facebook,asx.followers.TikTok,asx.followers.YouTube,asx.total,asx.color],[68000,0,0,0,68000,'#F5F5F5']);const code=november.competitors.find(c=>c.name==='Code Automotive')!;assert.deepEqual([code.followers.Instagram,code.followers.Facebook,code.followers.TikTok,code.followers.YouTube,code.total],[7631,679,2262,809,11381])});
+test('planilha real preserva períodos, totais e concorrentes',()=>{const d=importedData();validate(d);const november=d.months.find(m=>m.month==='2026-11')!;assert.equal(d.months.length,4);assert.equal(total(november),16484);assert.equal(november.metrics.Instagram.followers,1464);assert.equal(november.complete,false);assert.equal(november.highlight.views,394783);assert.equal(observations.length,169);const latest=observations.find(row=>row.date==='2026-11-16')!;assert.equal(latest.values['TikTok · Views'],91300);assert.equal(latest.values['Instagram · Views'],243800);assert.equal(november.metrics.Facebook.interactions,37110);assert.equal(november.metrics.Instagram.reach,37200);assert.equal(november.posts.reduce((sum,p)=>sum+(p.totalLikes??0),0),3665);assert.equal(november.posts.reduce((sum,p)=>sum+(p.totalComments??0),0),738);assert.equal(november.competitors.length,15);const uppertech=november.competitors.find(c=>c.name==='Uppertech')!;assert.deepEqual([uppertech.followers.Instagram,uppertech.followers.Facebook,uppertech.followers.TikTok,uppertech.followers.YouTube,uppertech.total],[64700,0,619,57,65376]);const asx=november.competitors.find(c=>c.name==='ASX')!;assert.deepEqual([asx.followers.Instagram,asx.followers.Facebook,asx.followers.TikTok,asx.followers.YouTube,asx.total,asx.color],[68000,0,0,0,68000,'#F5F5F5']);const code=november.competitors.find(c=>c.name==='Code Automotive')!;assert.deepEqual([code.followers.Instagram,code.followers.Facebook,code.followers.TikTok,code.followers.YouTube,code.total],[7636,679,2262,809,11386])});
 test('destaque preserva todas as reações informadas',()=>{const november=importedData().months.find(m=>m.month==='2026-11')!;assert.deepEqual([november.highlight.views,november.highlight.likes,november.highlight.comments,november.highlight.shares],[394783,3485,711,98])});
-test('reações históricas incluem todos os posts desde julho',()=>{const data=importedData();assert.deepEqual([data.allTimePostLikes,data.allTimePostComments],[14848,2994])});
-test('visualizações históricas somam todos os posts e todas as redes',()=>{const data=importedData();assert.equal(data.allTimePostViews,2070269)});
+test('reações históricas incluem todos os posts desde julho',()=>{const data=importedData();assert.deepEqual([data.allTimePostLikes,data.allTimePostComments],[14889,3001])});
+test('visualizações históricas somam todos os posts e todas as redes',()=>{const data=importedData();assert.equal(data.allTimePostViews,2073204)});
 test('conteúdos em destaque usam somas das quatro redes, sem médias',()=>{assert.deepEqual(featuredContents.map(post=>[post.views,post.likes,post.comments]),[[235714,34,12],[833314,9001,7552],[43284,510,63]])});
 import update from '../lib/update-2026-11-16.json';
-test('atualização de 16/11 preserva métricas, somas por rede e concorrentes',()=>{
+import update18 from '../lib/update-2026-11-18.json';
+import posts17 from '../lib/update-posts-2026-11-17.json';
+test('atualização de 18/11 aplica as medições confirmadas e preserva o Facebook e o destaque',()=>{
  const data=importedData(),month=data.months.find(m=>m.month==='2026-11')!;
- assert.equal(month.date,'2026-11-16');assert.equal(month.updatedAt,'2026-11-16T12:00:00Z');
- assert.deepEqual(month.metrics,update.metrics);
- assert.deepEqual(observations.find(r=>r.date===month.date),update.observation);
+ assert.equal(month.date,'2026-11-18');assert.equal(month.updatedAt,'2026-11-18T12:00:00Z');
+ assert.deepEqual(month.metrics.Facebook,update.metrics.Facebook);
+ for(const network of ['Instagram','TikTok','YouTube'] as const){
+  assert.deepEqual(month.metrics[network],{...update.metrics[network],...update18.metrics[network]});
+ }
+ assert.deepEqual(observations.find(r=>r.date===update.referenceDate),update.observation);
+ for(const expected of update18.observations){
+  const row=observations.find(r=>r.date===expected.date)!;
+  assert.equal(row.values['Facebook · Views'],null);
+  for(const [key,value] of Object.entries(expected.values)) assert.equal(row.values[key as keyof typeof row.values],value);
+ }
  for(const metric of ['views','likes','comments'] as const) assert.equal(month.highlight[metric],Object.values(update.highlightNetworks).reduce((sum,n)=>sum+n[metric],0));
- assert.equal(data.allTimePostViews,1673328+month.highlight.views!+2158);
- assert.equal(data.allTimePostLikes,11344+month.highlight.likes!+19);
- assert.equal(data.allTimePostComments,2275+month.highlight.comments!+8);
- for(const c of month.competitors){assert.equal(c.date,month.date);assert.equal(c.total,Object.values(c.followers).reduce<number>((sum,v)=>sum+(v??0),0));}
+ assert.equal(data.allTimePostViews,1673328+month.highlight.views!+2158+2935);
+ assert.equal(data.allTimePostLikes,11344+month.highlight.likes!+19+41);
+ assert.equal(data.allTimePostComments,2275+month.highlight.comments!+8+7);
+ for(const c of month.competitors){assert.equal(c.date,month.date);assert.equal(c.followerDates?.TikTok,update.referenceDate);assert.equal(c.followers.TikTok,update.competitors.find(item=>item.name===c.name)?.followers.TikTok);assert.equal(c.total,Object.values(c.followers).includes(null)?null:Object.values(c.followers).reduce<number>((sum,v)=>sum+(v??0),0));}
  assert.equal(month.competitors.find(c=>c.name==='Somma Films Wintech')!.followers.Facebook,680);
  assert.equal(month.competitors.find(c=>c.name==='Shock Light')!.followers.Facebook,2600);
 });
 
-test('planilha de 17/11 soma as redes dos seis posts sem duplicar o destaque',()=>{
+test('planilha de 18/11 soma as redes dos sete posts sem duplicar o destaque',()=>{
  const data=importedData(),posts=data.months.find(m=>m.month==='2026-11')!.posts;
- assert.equal(posts.length,6);
- assert.equal(new Set(posts.map(p=>p.id)).size,6);
+ assert.equal(posts.length,7);
+ assert.equal(new Set(posts.map(p=>p.id)).size,7);
  assert.deepEqual(posts.map(p=>[p.totalViews,p.totalLikes,p.totalComments]),[
-  [4849,51,4],[310,11,0],[953,20,0],[2562,38,8],[394783,3485,711],[2158,19,8]
+  [4849,51,4],[310,11,0],[953,20,0],[2562,38,8],[394783,3485,711],[2158,19,8],[2935,41,7]
  ]);
  const blackFriday=posts.find(p=>p.title==='Black Friday Small')!;
  assert.equal(blackFriday.date,'2026-11-10');
  assert.equal(blackFriday.views,1649);assert.equal(blackFriday.likes,2);
- assert.equal(data.allTimePostViews,2068111+509+1649);
- assert.equal(data.allTimePostLikes,14829+17+2);
- assert.equal(data.allTimePostComments,2986+0+8);
+ assert.equal(data.allTimePostViews,2068111+509+1649+2935);
+ assert.equal(data.allTimePostLikes,14829+17+2+41);
+ assert.equal(data.allTimePostComments,2986+0+8+7);
+});
+
+test('atualiza dados salvos sem sobrescrever edições nem duplicar o post',()=>{
+ const saved=importedData();
+ const month=saved.months.at(-1)!;
+ Object.assign(saved,posts17.historical,{logo:'/meu-logo.png'});
+ month.date=update.referenceDate;
+ month.metrics=structuredClone(update.metrics);
+ month.metrics.Instagram.views=123456;
+ month.highlight.src='/meu-destaque.png';
+ month.competitors=structuredClone(update.competitors);
+ month.competitors[0].profile='meu perfil';
+ month.competitors[1].followers.Facebook=3333;
+ month.posts.at(-1)!.id='id-personalizado';
+ month.posts.at(-1)!.media='/minha-miniatura.png';
+ const result=refreshNovemberUpdate(saved);
+ const november=result.months.at(-1)!;
+ assert.equal(november.metrics.Instagram.followers,1464);
+ assert.equal(november.metrics.Instagram.views,123456);
+ assert.equal(november.competitors[0].followers.TikTok,619);
+ assert.equal(november.competitors[0].followerDates?.TikTok,update.referenceDate);
+ assert.equal(november.competitors[0].profile,'meu perfil');
+ assert.deepEqual(november.competitors[1],month.competitors[1]);
+ assert.equal(november.posts.length,7);
+ assert.equal(november.posts.at(-1)!.media,'/minha-miniatura.png');
+ assert.equal(november.highlight.src,'/meu-destaque.png');
+ assert.equal(result.logo,'/meu-logo.png');
+ assert.equal(result.allTimePostViews,2073204);
+ assert.equal(saved.allTimePostViews,2070269);
+ assert.deepEqual(refreshNovemberUpdate(result),result);
 });

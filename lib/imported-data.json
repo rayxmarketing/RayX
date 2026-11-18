@@ -1687,9 +1687,9 @@
     },
     {
       "month": "2026-11",
-      "date": "2026-11-16",
+      "date": "2026-11-18",
       "complete": false,
-      "updatedAt": "2026-11-16T12:00:00Z",
+      "updatedAt": "2026-11-18T12:00:00Z",
       "metrics": {
         "Facebook": {
           "followers": 12883,
@@ -1702,54 +1702,61 @@
           "saves": null
         },
         "Instagram": {
-          "followers": 1459,
-          "reach": 37000,
-          "views": 243800,
-          "interactions": 8000,
+          "followers": 1464,
+          "reach": 37200,
+          "views": 247000,
+          "interactions": 8100,
           "likes": null,
           "comments": null,
           "shares": null,
-          "saves": null
+          "saves": null,
+          "visits": 6800
         },
         "YouTube": {
-          "followers": 1393,
+          "followers": 1394,
           "reach": null,
-          "views": 332800,
+          "views": 333209,
           "interactions": null,
           "likes": null,
           "comments": null,
           "shares": null,
-          "saves": null
+          "saves": null,
+          "watchTime48h": 320,
+          "watchTime": 4600
         },
         "TikTok": {
-          "followers": 739,
+          "followers": 743,
           "reach": null,
-          "views": 91300,
-          "interactions": 1369,
-          "likes": 1649,
+          "views": 91900,
+          "interactions": 1374,
+          "likes": 1657,
           "comments": null,
           "shares": null,
-          "saves": null
+          "saves": null,
+          "profileViews": 1200
         }
       },
       "competitors": [
         {
           "name": "Uppertech",
           "profile": "",
-          "date": "2026-11-16",
-          "total": 65475,
+          "date": "2026-11-18",
+          "total": 65376,
           "color": "#E5484D",
           "followers": {
-            "Instagram": 64800,
+            "Instagram": 64700,
             "Facebook": 0,
             "TikTok": 619,
-            "YouTube": 56
+            "YouTube": 57
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "Tiger Auto",
           "profile": "",
-          "date": "2026-11-16",
+          "date": "2026-11-18",
           "total": 14300,
           "color": "#268CFF",
           "followers": {
@@ -1757,25 +1764,31 @@
             "Facebook": 2700,
             "TikTok": 0,
             "YouTube": 0
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "E Tech",
           "profile": "",
-          "date": "2026-11-16",
-          "total": 1390,
+          "date": "2026-11-18",
+          "total": 1391,
           "color": "#E5484D",
           "followers": {
-            "Instagram": 1390,
+            "Instagram": 1391,
             "Facebook": 0,
             "TikTok": 0,
             "YouTube": 0
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "Tarponn",
           "profile": "",
-          "date": "2026-11-16",
+          "date": "2026-11-18",
           "total": 13211,
           "color": "#F4C430",
           "followers": {
@@ -1783,25 +1796,31 @@
             "Facebook": 618,
             "TikTok": 0,
             "YouTube": 993
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "FP Import",
           "profile": "",
-          "date": "2026-11-16",
-          "total": 5817,
+          "date": "2026-11-18",
+          "total": 5819,
           "color": "#E5484D",
           "followers": {
-            "Instagram": 4919,
+            "Instagram": 4920,
             "Facebook": 0,
             "TikTok": 0,
-            "YouTube": 898
+            "YouTube": 899
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "First Option",
           "profile": "",
-          "date": "2026-11-16",
+          "date": "2026-11-18",
           "total": 2041,
           "color": "#34C759",
           "followers": {
@@ -1809,25 +1828,31 @@
             "Facebook": 0,
             "TikTok": 253,
             "YouTube": 250
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "Alemar Group",
           "profile": "",
-          "date": "2026-11-16",
-          "total": 48338,
+          "date": "2026-11-18",
+          "total": 48738,
           "color": "#268CFF",
           "followers": {
-            "Instagram": 45500,
+            "Instagram": 45900,
             "Facebook": 0,
             "TikTok": 2741,
             "YouTube": 97
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "Force One",
           "profile": "",
-          "date": "2026-11-16",
+          "date": "2026-11-18",
           "total": 11500,
           "color": "#F5F5F5",
           "followers": {
@@ -1835,25 +1860,31 @@
             "Facebook": 0,
             "TikTok": 0,
             "YouTube": 0
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "Suits",
           "profile": "",
-          "date": "2026-11-16",
+          "date": "2026-11-18",
           "total": 1551,
           "color": "#A855F7",
           "followers": {
-            "Instagram": 890,
+            "Instagram": 889,
             "Facebook": 0,
             "TikTok": 0,
-            "YouTube": 661
+            "YouTube": 662
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "Somma Films Wintech",
           "profile": "",
-          "date": "2026-11-16",
+          "date": "2026-11-18",
           "total": 11180,
           "color": "#E5484D",
           "followers": {
@@ -1861,25 +1892,31 @@
             "Facebook": 680,
             "TikTok": 0,
             "YouTube": 0
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "Code Automotive",
           "profile": "",
-          "date": "2026-11-16",
-          "total": 11381,
+          "date": "2026-11-18",
+          "total": 11386,
           "color": "#F4C430",
           "followers": {
-            "Instagram": 7631,
+            "Instagram": 7636,
             "Facebook": 679,
             "TikTok": 2262,
             "YouTube": 809
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "Cinoy",
           "profile": "",
-          "date": "2026-11-16",
+          "date": "2026-11-18",
           "total": 16572,
           "color": "#E5484D",
           "followers": {
@@ -1887,12 +1924,15 @@
             "Facebook": 392,
             "TikTok": 0,
             "YouTube": 1080
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "JR8",
           "profile": "",
-          "date": "2026-11-16",
+          "date": "2026-11-18",
           "total": 30372,
           "color": "#E5484D",
           "followers": {
@@ -1900,12 +1940,15 @@
             "Facebook": 1400,
             "TikTok": 172,
             "YouTube": 1100
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "Shock Light",
           "profile": "",
-          "date": "2026-11-16",
+          "date": "2026-11-18",
           "total": 24471,
           "color": "#268CFF",
           "followers": {
@@ -1913,12 +1956,15 @@
             "Facebook": 2600,
             "TikTok": 11,
             "YouTube": 1260
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {
           "name": "ASX",
           "profile": "",
-          "date": "2026-11-16",
+          "date": "2026-11-18",
           "total": 68000,
           "color": "#F5F5F5",
           "followers": {
@@ -1926,6 +1972,9 @@
             "Facebook": 0,
             "TikTok": 0,
             "YouTube": 0
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         }
       ],
@@ -2013,6 +2062,44 @@
           "totalViews": 2158,
           "totalLikes": 19,
           "totalComments": 8
+        },
+        {
+          "id": "2026-11-chico-e-vinicius-ep2",
+          "network": "Facebook",
+          "date": "2026-11-11",
+          "measuredAt": "2026-11-18",
+          "format": "Chico e Vinicius",
+          "title": "Chico e Vinicius Ep2",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 2166,
+          "likes": 8,
+          "totalViews": 2935,
+          "totalLikes": 41,
+          "totalComments": 7,
+          "networkMetrics": {
+            "Instagram": {
+              "reach": 408,
+              "views": 599,
+              "likes": 29,
+              "comments": 7
+            },
+            "Facebook": {
+              "views": 2166,
+              "likes": 8,
+              "comments": 0
+            },
+            "TikTok": {
+              "views": 132,
+              "likes": 2,
+              "comments": 0
+            },
+            "YouTube": {
+              "views": 38,
+              "likes": 2,
+              "comments": 0
+            }
+          }
         }
       ],
       "highlight": {
@@ -2028,7 +2115,7 @@
       }
     }
   ],
-  "allTimePostViews": 2070269,
-  "allTimePostLikes": 14848,
-  "allTimePostComments": 2994
+  "allTimePostViews": 2073204,
+  "allTimePostLikes": 14889,
+  "allTimePostComments": 3001
 }
