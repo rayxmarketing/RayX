@@ -1,25 +1,25 @@
 {
   "referenceDate": "2026-11-18",
-  "source": "Planilhas RayX de 17 e 18/11/2026 e seguidores-concorrentes-rayx (1).pdf de 18/11/2026, 08h23 (Brasília)",
+  "source": "Planilhas RayX de 17 e 18/11/2026, capturas das métricas de 18/11/2026 e seguidores-concorrentes-rayx (1).pdf de 18/11/2026, 08h23 (Brasília)",
   "metrics": {
     "Instagram": {
-      "followers": 1464,
-      "views": 247000,
-      "reach": 37200,
+      "followers": 1472,
+      "views": 249800,
+      "reach": 37600,
       "interactions": 8100,
-      "visits": 6800
+      "visits": 6900
     },
     "TikTok": {
-      "followers": 743,
-      "views": 91900,
+      "followers": 746,
+      "views": 92300,
       "profileViews": 1200,
-      "interactions": 1374,
-      "likes": 1657
+      "interactions": 1376,
+      "likes": 1660
     },
     "YouTube": {
-      "followers": 1394,
-      "views": 333209,
-      "watchTime48h": 320,
+      "followers": 1395,
+      "views": 333425,
+      "watchTime48h": 376,
       "watchTime": 4600
     }
   },
@@ -48,20 +48,20 @@
       "month": "2026-11",
       "date": "2026-11-18",
       "values": {
-        "Instagram · Views": 247000,
-        "Instagram · Alcance": 37200,
+        "Instagram · Views": 249800,
+        "Instagram · Alcance": 37600,
         "Instagram · Interações": 8100,
-        "Instagram · Visitas": 6800,
-        "Instagram · Seguidores": 1464,
-        "TikTok · Views": 91900,
+        "Instagram · Visitas": 6900,
+        "Instagram · Seguidores": 1472,
+        "TikTok · Views": 92300,
         "TikTok · Views Perfil": 1200,
-        "TikTok · Interações": 1374,
-        "TikTok · Curtidas": 1657,
-        "TikTok · Seguidores": 743,
-        "YouTube · Views": 333209,
-        "YouTube · Tempo 48h": 320,
+        "TikTok · Interações": 1376,
+        "TikTok · Curtidas": 1660,
+        "TikTok · Seguidores": 746,
+        "YouTube · Views": 333425,
+        "YouTube · Tempo 48h": 376,
         "YouTube · Tempo": 4600,
-        "YouTube · Inscritos": 1394
+        "YouTube · Inscritos": 1395
       }
     }
   ],

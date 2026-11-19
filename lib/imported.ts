@@ -25,26 +25,41 @@ const postContributions={
  allTimePostComments: novemberUpdate.post.totalComments,
 };
 
+const previousNovember18Metrics: Partial<Record<Network, Partial<Metrics>>> = {
+ Instagram: {followers:1464, views:247000, reach:37200, interactions:8100, visits:6800},
+ TikTok: {followers:743, views:91900, profileViews:1200, interactions:1374, likes:1657},
+ YouTube: {followers:1394, views:333209, watchTime48h:320, watchTime:4600},
+};
+
+function mergeNovemberMetrics(month:Data['months'][number], baseline:Partial<Record<Network, Partial<Metrics>>>){
+ for(const [network,metrics] of Object.entries(novemberUpdate.metrics)){
+  const name=network as Network;
+  const original=baseline[name];
+  if(!original) continue;
+  for(const [key,value] of Object.entries(metrics)){
+   const field=key as keyof Metrics;
+   if(month.metrics[name][field]===original[field]) month.metrics[name][field]=value;
+  }
+ }
+}
+
 // Merge only fields that still match the published baseline. The read does not
 // write to browser storage or Supabase. An explicit admin save retains the merge.
 export function refreshNovemberUpdate(data:Data):Data {
  const month=data.months.find(item=>item.month==='2026-11');
- if(!month || month.date!==previousUpdate.referenceDate) return data;
+ if(!month || (month.date!==previousUpdate.referenceDate && month.date!==novemberUpdate.referenceDate)) return data;
 
  data=structuredClone(data);
  const november=data.months.find(item=>item.month===month.month)!;
+ if(month.date===novemberUpdate.referenceDate){
+  mergeNovemberMetrics(november,previousNovember18Metrics);
+  return data;
+ }
  november.date=novemberUpdate.referenceDate;
  const updatedAt=novemberUpdate.referenceDate+'T12:00:00Z';
  if(november.updatedAt<updatedAt) november.updatedAt=updatedAt;
 
- for(const [network,metrics] of Object.entries(novemberUpdate.metrics)){
-  const name=network as Network;
-  const original:Metrics=previousUpdate.metrics[name];
-  for(const [key,value] of Object.entries(metrics)){
-   const field=key as keyof Metrics;
-   if(november.metrics[name][field]===original[field]) november.metrics[name][field]=value;
-  }
- }
+ mergeNovemberMetrics(november,previousUpdate.metrics);
 
  for(const competitor of november.competitors){
   const original=previousUpdate.competitors.find(item=>item.name===competitor.name);
