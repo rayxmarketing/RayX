@@ -50,6 +50,7 @@ def apply_update(data, observations):
     posts_update = snapshot('update-posts-2026-11-17.json')
     current = snapshot('update-2026-11-18.json')
     latest = snapshot('update-2026-11-20.json')
+    competitor_update = snapshot('competitors-2026-11-23.json')
     month = next(m for m in data['months'] if m['month'] == '2026-11')
     original_date = month['date']
     target_date = current['referenceDate']
@@ -74,7 +75,7 @@ def apply_update(data, observations):
 
     # These values are external to the workbook's network and post measurements.
     month['highlight'] = copy.deepcopy(previous['highlight'])
-    month['competitors'] = copy.deepcopy(current['competitors'])
+    month['competitors'] = competitor_update['competitors']
 
     if original_date <= target_date:
         month.update(date=target_date, updatedAt=f'{target_date}T12:00:00Z')

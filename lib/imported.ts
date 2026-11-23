@@ -3,7 +3,8 @@ import previousUpdate from './update-2026-11-16.json';
 import previousPosts from './update-posts-2026-11-17.json';
 import novemberUpdate from './update-2026-11-18.json';
 import latestUpdate from './update-2026-11-20.json';
-import {Data,Metrics,Network,Post} from './data';
+import competitorUpdate from './competitors-2026-11-23.json';
+import {Data,Metrics,Network,Post,networks} from './data';
 export function importedData():Data {
  return structuredClone(imported) as Data;
 }
@@ -58,6 +59,25 @@ function appendMissingPost(month:Data['months'][number], post:Post){
 // Merge only fields that still match the published baseline. The read does not
 // write to browser storage or Supabase. An explicit admin save retains the merge.
 export function refreshNovemberUpdate(data:Data):Data {
+ const refreshed=refreshNovemberMetricsAndPosts(data);
+ const month=refreshed.months.find(item=>item.month==='2026-11');
+ if(!month) return refreshed;
+
+ let changed=false;
+ const competitors=month.competitors.map(competitor=>{
+  const baseline=novemberUpdate.competitors.find(item=>item.name===competitor.name);
+  const incoming=competitorUpdate.competitors.find(item=>item.name===competitor.name);
+  if(!baseline || !incoming || competitor.date!==baseline.date) return competitor;
+  if(!networks.every(network=>competitor.followers[network]===baseline.followers[network])) return competitor;
+  if(competitor.total!=null && competitor.total!==baseline.total) return competitor;
+
+  changed=true;
+  return {...competitor,date:incoming.date,followers:{...incoming.followers},total:incoming.total,followerDates:undefined};
+ });
+ return changed ? {...refreshed,months:refreshed.months.map(item=>item===month ? {...item,competitors} : item)} : refreshed;
+}
+
+function refreshNovemberMetricsAndPosts(data:Data):Data {
  const month=data.months.find(item=>item.month==='2026-11');
  if(!month || (month.date!==previousUpdate.referenceDate && month.date!==novemberUpdate.referenceDate)) return data;
 
