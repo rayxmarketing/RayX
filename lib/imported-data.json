@@ -1687,25 +1687,25 @@
     },
     {
       "month": "2026-11",
-      "date": "2026-11-18",
+      "date": "2026-11-20",
       "complete": false,
-      "updatedAt": "2026-11-18T12:00:00Z",
+      "updatedAt": "2026-11-20T12:00:00Z",
       "metrics": {
         "Facebook": {
           "followers": 12883,
           "reach": null,
-          "views": 1714756,
-          "interactions": 37110,
+          "views": 1726159,
+          "interactions": 37409,
           "likes": null,
           "comments": null,
           "shares": null,
           "saves": null
         },
         "Instagram": {
-          "followers": 1472,
-          "reach": 37600,
-          "views": 249800,
-          "interactions": 8100,
+          "followers": 1476,
+          "reach": 37300,
+          "views": 251600,
+          "interactions": 8200,
           "likes": null,
           "comments": null,
           "shares": null,
@@ -1713,23 +1713,23 @@
           "visits": 6900
         },
         "YouTube": {
-          "followers": 1395,
+          "followers": 1396,
           "reach": null,
-          "views": 333425,
+          "views": 333809,
           "interactions": null,
           "likes": null,
           "comments": null,
           "shares": null,
           "saves": null,
-          "watchTime48h": 376,
+          "watchTime48h": 189,
           "watchTime": 4600
         },
         "TikTok": {
-          "followers": 746,
+          "followers": 754,
           "reach": null,
-          "views": 92300,
-          "interactions": 1376,
-          "likes": 1660,
+          "views": 93000,
+          "interactions": 1384,
+          "likes": 1666,
           "comments": null,
           "shares": null,
           "saves": null,
@@ -2100,6 +2100,72 @@
               "comments": 0
             }
           }
+        },
+        {
+          "id": "2026-11-voce-sabe-a-diferenca",
+          "network": "Facebook",
+          "date": "2026-11-13",
+          "measuredAt": "2026-11-20",
+          "format": "Reels Tech Luz",
+          "title": "Você sabe a diferença...",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 5043,
+          "likes": 54,
+          "totalViews": 8111,
+          "totalLikes": 116,
+          "totalComments": 29,
+          "networkMetrics": {
+            "Instagram": {
+              "reach": 454,
+              "views": 679,
+              "likes": 23,
+              "comments": 0
+            },
+            "Facebook": {
+              "views": 5043,
+              "likes": 54,
+              "comments": 25
+            },
+            "TikTok": {
+              "views": 989,
+              "likes": 21,
+              "comments": 4
+            },
+            "YouTube": {
+              "views": 1400,
+              "likes": 18,
+              "comments": 0
+            }
+          }
+        },
+        {
+          "id": "2026-11-colors-gta-vi",
+          "network": "Facebook",
+          "date": "2026-11-16",
+          "measuredAt": "2026-11-23",
+          "format": "Post temático",
+          "title": "Colors GTA VI",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1935,
+          "likes": 5,
+          "totalViews": 2597,
+          "totalLikes": 24,
+          "totalComments": 1,
+          "networkMetrics": {
+            "Instagram": {
+              "reach": 395,
+              "views": 662,
+              "likes": 19,
+              "comments": 1
+            },
+            "Facebook": {
+              "views": 1935,
+              "likes": 5,
+              "comments": 0
+            }
+          }
         }
       ],
       "highlight": {
@@ -2115,7 +2181,7 @@
       }
     }
   ],
-  "allTimePostViews": 2073204,
-  "allTimePostLikes": 14889,
-  "allTimePostComments": 3001
+  "allTimePostViews": 2083912,
+  "allTimePostLikes": 15029,
+  "allTimePostComments": 3031
 }

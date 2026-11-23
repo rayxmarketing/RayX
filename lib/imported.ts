@@ -2,6 +2,7 @@ import imported from './imported-data.json';
 import previousUpdate from './update-2026-11-16.json';
 import previousPosts from './update-posts-2026-11-17.json';
 import novemberUpdate from './update-2026-11-18.json';
+import latestUpdate from './update-2026-11-20.json';
 import {Data,Metrics,Network,Post} from './data';
 export function importedData():Data {
  return structuredClone(imported) as Data;
@@ -25,22 +26,33 @@ const postContributions={
  allTimePostComments: novemberUpdate.post.totalComments,
 };
 
-const previousNovember18Metrics: Partial<Record<Network, Partial<Metrics>>> = {
- Instagram: {followers:1464, views:247000, reach:37200, interactions:8100, visits:6800},
- TikTok: {followers:743, views:91900, profileViews:1200, interactions:1374, likes:1657},
- YouTube: {followers:1394, views:333209, watchTime48h:320, watchTime:4600},
+type NetworkMetrics = Partial<Record<Network, Partial<Metrics>>>;
+const publishedNovember18Metrics: NetworkMetrics = {
+ ...previousUpdate.metrics,
+ Instagram: {followers:1472, views:249800, reach:37600, interactions:8100, visits:6900},
+ TikTok: {followers:746, views:92300, profileViews:1200, interactions:1376, likes:1660},
+ YouTube: {followers:1395, views:333425, watchTime48h:376, watchTime:4600},
 };
 
-function mergeNovemberMetrics(month:Data['months'][number], baseline:Partial<Record<Network, Partial<Metrics>>>){
- for(const [network,metrics] of Object.entries(novemberUpdate.metrics)){
+function mergeNovemberMetrics(month:Data['months'][number], incoming:NetworkMetrics, ...baselines:NetworkMetrics[]){
+ for(const [network,metrics] of Object.entries(incoming)){
   const name=network as Network;
-  const original=baseline[name];
-  if(!original) continue;
   for(const [key,value] of Object.entries(metrics)){
    const field=key as keyof Metrics;
-   if(month.metrics[name][field]===original[field]) month.metrics[name][field]=value;
+   if(!baselines.some(baseline=>month.metrics[name][field]===baseline[name]?.[field])) continue;
+   if(field==='followers'){
+    if(typeof value==='number') month.metrics[name].followers=value;
+   }else{
+    month.metrics[name][field]=value;
+   }
   }
  }
+}
+
+function appendMissingPost(month:Data['months'][number], post:Post){
+ const existing=month.posts.some(item=>item.id===post.id ||
+  (item.date===post.date && normalizeTitle(item.title)===normalizeTitle(post.title)));
+ if(!existing) month.posts.push(structuredClone(post));
 }
 
 // Merge only fields that still match the published baseline. The read does not
@@ -51,15 +63,24 @@ export function refreshNovemberUpdate(data:Data):Data {
 
  data=structuredClone(data);
  const november=data.months.find(item=>item.month===month.month)!;
- if(month.date===novemberUpdate.referenceDate){
-  mergeNovemberMetrics(november,previousNovember18Metrics);
-  return data;
+ if(month.date===previousUpdate.referenceDate){
+  applyNovember18(data,november);
  }
- november.date=novemberUpdate.referenceDate;
- const updatedAt=novemberUpdate.referenceDate+'T12:00:00Z';
+ november.date=latestUpdate.referenceDate;
+ const updatedAt=latestUpdate.referenceDate+'T12:00:00Z';
  if(november.updatedAt<updatedAt) november.updatedAt=updatedAt;
+ mergeNovemberMetrics(november,latestUpdate.metrics,publishedNovember18Metrics,novemberUpdate.metrics);
+ for(const post of latestUpdate.posts) appendMissingPost(november,post as Post);
+ for(const [key,field] of Object.entries({allTimePostViews:'totalViews',allTimePostLikes:'totalLikes',allTimePostComments:'totalComments'} as const)){
+  const historicalKey=key as keyof typeof postContributions;
+  const baseline=previousPosts.historical[historicalKey]+postContributions[historicalKey];
+  if(data[historicalKey]===baseline) data[historicalKey]=baseline+latestUpdate.posts.reduce((sum,post)=>sum+post[field],0);
+ }
+ return data;
+}
 
- mergeNovemberMetrics(november,previousUpdate.metrics);
+function applyNovember18(data:Data, november:Data['months'][number]){
+ mergeNovemberMetrics(november,novemberUpdate.metrics,previousUpdate.metrics);
 
  for(const competitor of november.competitors){
   const original=previousUpdate.competitors.find(item=>item.name===competitor.name);
@@ -74,19 +95,13 @@ export function refreshNovemberUpdate(data:Data):Data {
   Object.assign(competitor,{date:incoming.date,total:incoming.total,followerDates:{...competitor.followerDates,...incoming.followerDates},followers:{...incoming.followers}});
  }
 
- const appendMissingPost=(post:Post)=>{
-  const existing=november.posts.some(item=>item.id===post.id ||
-   (item.date===post.date && normalizeTitle(item.title)===normalizeTitle(post.title)));
-  if(!existing) november.posts.push(structuredClone(post));
- };
  const historicalKeys=Object.keys(postContributions) as (keyof typeof postContributions)[];
  const olderSpreadsheet=data.source==='spreadsheet' &&
   historicalKeys.every(key=>data[key]===previousUpdate.historical[key]);
- if(olderSpreadsheet) previousPosts.posts.forEach(post=>appendMissingPost(post as Post));
- appendMissingPost(novemberUpdate.post as Post);
+ if(olderSpreadsheet) previousPosts.posts.forEach(post=>appendMissingPost(november,post as Post));
+ appendMissingPost(november,novemberUpdate.post as Post);
  for(const key of historicalKeys){
   const baseline=previousPosts.historical[key];
   if(olderSpreadsheet || data[key]===baseline) data[key]=baseline+postContributions[key];
  }
- return data;
 }

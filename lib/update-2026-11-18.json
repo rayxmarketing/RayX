@@ -3,23 +3,23 @@
   "source": "Planilhas RayX de 17 e 18/11/2026, capturas das métricas de 18/11/2026 e seguidores-concorrentes-rayx (1).pdf de 18/11/2026, 08h23 (Brasília)",
   "metrics": {
     "Instagram": {
-      "followers": 1472,
-      "views": 249800,
-      "reach": 37600,
+      "followers": 1464,
+      "views": 247000,
+      "reach": 37200,
       "interactions": 8100,
-      "visits": 6900
+      "visits": 6800
     },
     "TikTok": {
-      "followers": 746,
-      "views": 92300,
+      "followers": 743,
+      "views": 91900,
       "profileViews": 1200,
-      "interactions": 1376,
-      "likes": 1660
+      "interactions": 1374,
+      "likes": 1657
     },
     "YouTube": {
-      "followers": 1395,
-      "views": 333425,
-      "watchTime48h": 376,
+      "followers": 1394,
+      "views": 333209,
+      "watchTime48h": 320,
       "watchTime": 4600
     }
   },
@@ -41,27 +41,31 @@
         "YouTube · Views": 333035,
         "YouTube · Tempo 48h": 352,
         "YouTube · Tempo": 4600,
-        "YouTube · Inscritos": 1393
+        "YouTube · Inscritos": 1393,
+        "Facebook · Views": 1717567,
+        "Facebook · Engajamento": 37170
       }
     },
     {
       "month": "2026-11",
       "date": "2026-11-18",
       "values": {
-        "Instagram · Views": 249800,
-        "Instagram · Alcance": 37600,
+        "Instagram · Views": 247000,
+        "Instagram · Alcance": 37200,
         "Instagram · Interações": 8100,
-        "Instagram · Visitas": 6900,
-        "Instagram · Seguidores": 1472,
-        "TikTok · Views": 92300,
+        "Instagram · Visitas": 6800,
+        "Instagram · Seguidores": 1464,
+        "TikTok · Views": 91900,
         "TikTok · Views Perfil": 1200,
-        "TikTok · Interações": 1376,
-        "TikTok · Curtidas": 1660,
-        "TikTok · Seguidores": 746,
-        "YouTube · Views": 333425,
-        "YouTube · Tempo 48h": 376,
+        "TikTok · Interações": 1374,
+        "TikTok · Curtidas": 1657,
+        "TikTok · Seguidores": 743,
+        "YouTube · Views": 333209,
+        "YouTube · Tempo 48h": 320,
         "YouTube · Tempo": 4600,
-        "YouTube · Inscritos": 1395
+        "YouTube · Inscritos": 1394,
+        "Facebook · Views": 1719799,
+        "Facebook · Engajamento": 37240
       }
     }
   ],

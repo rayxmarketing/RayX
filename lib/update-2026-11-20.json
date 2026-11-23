@@ -1,0 +1,174 @@
+{
+  "referenceDate": "2026-11-20",
+  "source": "Planilhas RayX de redes sociais e publicações enviadas em 23/11/2026",
+  "metrics": {
+    "Instagram": {
+      "followers": 1476,
+      "views": 251600,
+      "reach": 37300,
+      "interactions": 8200,
+      "visits": 6900
+    },
+    "TikTok": {
+      "followers": 754,
+      "views": 93000,
+      "profileViews": 1200,
+      "interactions": 1384,
+      "likes": 1666
+    },
+    "YouTube": {
+      "followers": 1396,
+      "views": 333809,
+      "watchTime48h": 189,
+      "watchTime": 4600
+    },
+    "Facebook": {
+      "views": 1726159,
+      "interactions": 37409
+    }
+  },
+  "observations": [
+    {
+      "month": "2026-11",
+      "date": "2026-11-17",
+      "values": {
+        "Facebook · Views": 1717567,
+        "Facebook · Engajamento": 37170
+      }
+    },
+    {
+      "month": "2026-11",
+      "date": "2026-11-18",
+      "values": {
+        "Instagram · Seguidores": 1464,
+        "Instagram · Views": 247000,
+        "Instagram · Alcance": 37200,
+        "Instagram · Interações": 8100,
+        "Instagram · Visitas": 6800,
+        "TikTok · Seguidores": 743,
+        "TikTok · Views": 91900,
+        "TikTok · Views Perfil": 1200,
+        "TikTok · Interações": 1374,
+        "TikTok · Curtidas": 1657,
+        "YouTube · Inscritos": 1394,
+        "YouTube · Views": 333209,
+        "YouTube · Tempo 48h": 320,
+        "YouTube · Tempo": 4600,
+        "Facebook · Views": 1719799,
+        "Facebook · Engajamento": 37240
+      }
+    },
+    {
+      "month": "2026-11",
+      "date": "2026-11-19",
+      "values": {
+        "Instagram · Seguidores": 1472,
+        "Instagram · Views": 249800,
+        "Instagram · Alcance": 37600,
+        "Instagram · Interações": 8100,
+        "Instagram · Visitas": 6900,
+        "TikTok · Seguidores": 746,
+        "TikTok · Views": 92300,
+        "TikTok · Views Perfil": 1200,
+        "TikTok · Interações": 1376,
+        "TikTok · Curtidas": 1660,
+        "YouTube · Inscritos": 1395,
+        "YouTube · Views": 333425,
+        "YouTube · Tempo 48h": 376,
+        "YouTube · Tempo": 4600,
+        "Facebook · Views": 1721225,
+        "Facebook · Engajamento": 37302
+      }
+    },
+    {
+      "month": "2026-11",
+      "date": "2026-11-20",
+      "values": {
+        "Instagram · Seguidores": 1476,
+        "Instagram · Views": 251600,
+        "Instagram · Alcance": 37300,
+        "Instagram · Interações": 8200,
+        "Instagram · Visitas": 6900,
+        "TikTok · Seguidores": 754,
+        "TikTok · Views": 93000,
+        "TikTok · Views Perfil": 1200,
+        "TikTok · Interações": 1384,
+        "TikTok · Curtidas": 1666,
+        "YouTube · Inscritos": 1396,
+        "YouTube · Views": 333809,
+        "YouTube · Tempo 48h": 189,
+        "YouTube · Tempo": 4600,
+        "Facebook · Views": 1726159,
+        "Facebook · Engajamento": 37409
+      }
+    }
+  ],
+  "posts": [
+    {
+      "id": "2026-11-voce-sabe-a-diferenca",
+      "network": "Facebook",
+      "date": "2026-11-13",
+      "measuredAt": "2026-11-20",
+      "format": "Reels Tech Luz",
+      "title": "Você sabe a diferença...",
+      "url": "",
+      "media": "/automotive.svg",
+      "views": 5043,
+      "likes": 54,
+      "totalViews": 8111,
+      "totalLikes": 116,
+      "totalComments": 29,
+      "networkMetrics": {
+        "Instagram": {
+          "reach": 454,
+          "views": 679,
+          "likes": 23,
+          "comments": 0
+        },
+        "Facebook": {
+          "views": 5043,
+          "likes": 54,
+          "comments": 25
+        },
+        "TikTok": {
+          "views": 989,
+          "likes": 21,
+          "comments": 4
+        },
+        "YouTube": {
+          "views": 1400,
+          "likes": 18,
+          "comments": 0
+        }
+      }
+    },
+    {
+      "id": "2026-11-colors-gta-vi",
+      "network": "Facebook",
+      "date": "2026-11-16",
+      "measuredAt": "2026-11-23",
+      "format": "Post temático",
+      "title": "Colors GTA VI",
+      "url": "",
+      "media": "/automotive.svg",
+      "views": 1935,
+      "likes": 5,
+      "totalViews": 2597,
+      "totalLikes": 24,
+      "totalComments": 1,
+      "networkMetrics": {
+        "Instagram": {
+          "reach": 395,
+          "views": 662,
+          "likes": 19,
+          "comments": 1
+        },
+        "Facebook": {
+          "views": 1935,
+          "likes": 5,
+          "comments": 0
+        }
+      }
+    }
+  ]
+}
