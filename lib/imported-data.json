@@ -2075,6 +2075,34 @@
           }
         },
         {
+          "id": "2026-11-black-friday-projetor-max",
+          "network": "Facebook",
+          "date": "2026-11-12",
+          "measuredAt": "2026-11-19",
+          "format": "Post de LED",
+          "title": "Black Friday Projetor Max",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 679,
+          "likes": 1,
+          "totalViews": 1047,
+          "totalLikes": 21,
+          "totalComments": 1,
+          "networkMetrics": {
+            "Instagram": {
+              "reach": 211,
+              "views": 368,
+              "likes": 20,
+              "comments": 0
+            },
+            "Facebook": {
+              "views": 679,
+              "likes": 1,
+              "comments": 1
+            }
+          }
+        },
+        {
           "id": "2026-11-voce-sabe-a-diferenca",
           "network": "Facebook",
           "date": "2026-11-13",
@@ -2139,6 +2167,34 @@
               "comments": 0
             }
           }
+        },
+        {
+          "id": "2026-11-elite-pro-gta-vi",
+          "network": "Instagram",
+          "date": "2026-11-17",
+          "measuredAt": "2026-11-24",
+          "format": "Post temático",
+          "title": "Elite Pro GTA VI",
+          "url": "",
+          "media": "/automotive.svg",
+          "views": 1093,
+          "likes": 20,
+          "totalViews": 1434,
+          "totalLikes": 22,
+          "totalComments": 2,
+          "networkMetrics": {
+            "Instagram": {
+              "reach": 738,
+              "views": 1093,
+              "likes": 20,
+              "comments": 1
+            },
+            "Facebook": {
+              "views": 341,
+              "likes": 2,
+              "comments": 1
+            }
+          }
         }
       ],
       "highlight": {
@@ -2154,7 +2210,7 @@
       }
     }
   ],
-  "allTimePostViews": 2083912,
-  "allTimePostLikes": 15029,
-  "allTimePostComments": 3031
+  "allTimePostViews": 2086393,
+  "allTimePostLikes": 15072,
+  "allTimePostComments": 3034
 }

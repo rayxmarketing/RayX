@@ -3,6 +3,7 @@ import previousUpdate from './update-2026-11-16.json';
 import previousPosts from './update-posts-2026-11-17.json';
 import novemberUpdate from './update-2026-11-18.json';
 import latestUpdate from './update-2026-11-20.json';
+import postsUpdate from './update-posts-2026-11-24.json';
 import networkUpdate from './update-2026-11-25.json';
 import previousCompetitors from './competitors-2026-11-23.json';
 import collectedCompetitors from './competitors-2026-11-24.json';
@@ -53,10 +54,32 @@ function mergeNovemberMetrics(month:Data['months'][number], incoming:NetworkMetr
  }
 }
 
-function appendMissingPost(month:Data['months'][number], post:Post){
- const existing=month.posts.some(item=>item.id===post.id ||
+function findPost(month:Data['months'][number], post:Post){
+ return month.posts.find(item=>item.id===post.id ||
   (item.date===post.date && normalizeTitle(item.title)===normalizeTitle(post.title)));
- if(!existing) month.posts.push(structuredClone(post));
+}
+
+function appendMissingPost(month:Data['months'][number], post:Post){
+ if(!findPost(month,post)) month.posts.push(structuredClone(post));
+}
+
+function refreshNovemberPosts(data:Data):Data {
+ const month=data.months.find(item=>item.month==='2026-11');
+ if(!month) return data;
+ const posts:Post[]=postsUpdate.posts as Post[];
+ const missing=posts.filter(post=>!findPost(month,post));
+ const totals={...data};
+ const fields={allTimePostViews:'totalViews',allTimePostLikes:'totalLikes',allTimePostComments:'totalComments'} as const;
+ for(const key of Object.keys(fields) as (keyof typeof fields)[]){
+  if(data[key]!==postsUpdate.historicalBaseline[key]) continue;
+  const field=fields[key];
+  totals[key]=postsUpdate.historicalBaseline[key]+posts.reduce((sum,post)=>sum+(findPost(month,post)?.[field]??post[field]??0),0);
+ }
+ if(missing.length>0){
+  const updated={...month,posts:[...month.posts,...structuredClone(missing)].sort((a,b)=>a.date.localeCompare(b.date))};
+  totals.months=data.months.map(item=>item===month?updated:item);
+ }
+ return totals;
 }
 
 // Merge only fields that still match the published baseline. The read does not
@@ -75,6 +98,7 @@ export function refreshNovemberUpdate(data:Data):Data {
   if(november.updatedAt<updatedAt) november.updatedAt=updatedAt;
   mergeNovemberMetrics(november,networkUpdate.metrics,baseline);
  }
+ refreshed=refreshNovemberPosts(refreshed);
  const month=refreshed.months.find(item=>item.month==='2026-11');
  if(!month) return refreshed;
 
