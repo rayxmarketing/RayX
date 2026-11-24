@@ -3,7 +3,9 @@ import previousUpdate from './update-2026-11-16.json';
 import previousPosts from './update-posts-2026-11-17.json';
 import novemberUpdate from './update-2026-11-18.json';
 import latestUpdate from './update-2026-11-20.json';
-import competitorUpdate from './competitors-2026-11-23.json';
+import networkUpdate from './update-2026-11-25.json';
+import previousCompetitors from './competitors-2026-11-23.json';
+import competitorUpdate from './competitors-2026-11-24.json';
 import {Data,Metrics,Network,Post,networks} from './data';
 export function importedData():Data {
  return structuredClone(imported) as Data;
@@ -59,13 +61,26 @@ function appendMissingPost(month:Data['months'][number], post:Post){
 // Merge only fields that still match the published baseline. The read does not
 // write to browser storage or Supabase. An explicit admin save retains the merge.
 export function refreshNovemberUpdate(data:Data):Data {
- const refreshed=refreshNovemberMetricsAndPosts(data);
+ let refreshed=refreshNovemberMetricsAndPosts(data);
+ const published=refreshed.months.find(item=>item.month==='2026-11');
+ if(published?.date===latestUpdate.referenceDate || published?.date===networkUpdate.observations[0].date){
+  const baseline:NetworkMetrics=published.date===latestUpdate.referenceDate
+   ? {...latestUpdate.metrics,Facebook:{...latestUpdate.metrics.Facebook,followers:previousUpdate.metrics.Facebook.followers}}
+   : {...latestUpdate.metrics,Facebook:{...latestUpdate.metrics.Facebook,followers:networkUpdate.observations[0].values['Facebook · Seguidores']}};
+  refreshed=structuredClone(refreshed);
+  const november=refreshed.months.find(item=>item.month===published.month)!;
+  november.date=networkUpdate.referenceDate;
+  const updatedAt=networkUpdate.referenceDate+'T12:00:00Z';
+  if(november.updatedAt<updatedAt) november.updatedAt=updatedAt;
+  mergeNovemberMetrics(november,networkUpdate.metrics,baseline);
+ }
  const month=refreshed.months.find(item=>item.month==='2026-11');
  if(!month) return refreshed;
 
  let changed=false;
  const competitors=month.competitors.map(competitor=>{
-  const baseline=novemberUpdate.competitors.find(item=>item.name===competitor.name);
+  const baseline=[novemberUpdate,previousCompetitors].find(snapshot=>snapshot.referenceDate===competitor.date)
+   ?.competitors.find(item=>item.name===competitor.name);
   const incoming=competitorUpdate.competitors.find(item=>item.name===competitor.name);
   if(!baseline || !incoming || competitor.date!==baseline.date) return competitor;
   if(!networks.every(network=>competitor.followers[network]===baseline.followers[network])) return competitor;

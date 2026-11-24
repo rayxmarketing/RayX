@@ -50,13 +50,14 @@ def apply_update(data, observations):
     posts_update = snapshot('update-posts-2026-11-17.json')
     current = snapshot('update-2026-11-18.json')
     latest = snapshot('update-2026-11-20.json')
-    competitor_update = snapshot('competitors-2026-11-23.json')
+    network_update = snapshot('update-2026-11-25.json')
+    competitor_update = snapshot('competitors-2026-11-24.json')
     month = next(m for m in data['months'] if m['month'] == '2026-11')
     original_date = month['date']
     target_date = current['referenceDate']
 
     merge_observation(observations, previous['observation'])
-    for row in current['observations'] + latest['observations']:
+    for row in current['observations'] + latest['observations'] + network_update['observations']:
         merge_observation(observations, row)
     observations.sort(key=lambda r: r['date'])
 
@@ -104,3 +105,9 @@ def apply_update(data, observations):
                 before = (existing.get(field) or 0) if existing else 0
                 data[total] += post[field] - before
             upsert_post(month['posts'], post, existing)
+
+    if original_date <= network_update['referenceDate']:
+        date = network_update['referenceDate']
+        month.update(date=date, updatedAt=f'{date}T12:00:00Z')
+        for network, metrics in network_update['metrics'].items():
+            month['metrics'][network].update(metrics)

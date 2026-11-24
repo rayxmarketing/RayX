@@ -1,0 +1,78 @@
+{
+  "referenceDate": "2026-11-25",
+  "metrics": {
+    "Instagram": {
+      "views": 252300,
+      "reach": 37300,
+      "interactions": 8200,
+      "visits": 6900,
+      "followers": 1481
+    },
+    "Facebook": {
+      "views": 1730932,
+      "interactions": 37472,
+      "followers": 10896
+    },
+    "TikTok": {
+      "views": 93100,
+      "profileViews": 1200,
+      "interactions": 2369,
+      "likes": 1687,
+      "followers": 758
+    },
+    "YouTube": {
+      "views": 334010,
+      "watchTime48h": 284,
+      "watchTime": 4600,
+      "followers": 1396
+    }
+  },
+  "observations": [
+    {
+      "month": "2026-11",
+      "date": "2026-11-24",
+      "values": {
+        "Instagram · Views": 251600,
+        "Instagram · Alcance": 37300,
+        "Instagram · Interações": 8200,
+        "Instagram · Visitas": 6900,
+        "Instagram · Seguidores": 1476,
+        "Facebook · Views": 1726159,
+        "Facebook · Engajamento": 37409,
+        "Facebook · Seguidores": 12734,
+        "TikTok · Views": 93000,
+        "TikTok · Views Perfil": 1200,
+        "TikTok · Interações": 1384,
+        "TikTok · Curtidas": 1666,
+        "TikTok · Seguidores": 754,
+        "YouTube · Views": 333809,
+        "YouTube · Tempo 48h": 189,
+        "YouTube · Tempo": 4600,
+        "YouTube · Inscritos": 1396
+      }
+    },
+    {
+      "month": "2026-11",
+      "date": "2026-11-25",
+      "values": {
+        "Instagram · Views": 252300,
+        "Instagram · Alcance": 37300,
+        "Instagram · Interações": 8200,
+        "Instagram · Visitas": 6900,
+        "Instagram · Seguidores": 1481,
+        "Facebook · Views": 1730932,
+        "Facebook · Engajamento": 37472,
+        "Facebook · Seguidores": 10896,
+        "TikTok · Views": 93100,
+        "TikTok · Views Perfil": 1200,
+        "TikTok · Interações": 2369,
+        "TikTok · Curtidas": 1687,
+        "TikTok · Seguidores": 758,
+        "YouTube · Views": 334010,
+        "YouTube · Tempo 48h": 284,
+        "YouTube · Tempo": 4600,
+        "YouTube · Inscritos": 1396
+      }
+    }
+  ]
+}

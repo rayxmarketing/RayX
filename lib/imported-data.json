@@ -1687,24 +1687,24 @@
     },
     {
       "month": "2026-11",
-      "date": "2026-11-20",
+      "date": "2026-11-25",
       "complete": false,
-      "updatedAt": "2026-11-20T12:00:00Z",
+      "updatedAt": "2026-11-25T12:00:00Z",
       "metrics": {
         "Facebook": {
-          "followers": 12883,
+          "followers": 10896,
           "reach": null,
-          "views": 1726159,
-          "interactions": 37409,
+          "views": 1730932,
+          "interactions": 37472,
           "likes": null,
           "comments": null,
           "shares": null,
           "saves": null
         },
         "Instagram": {
-          "followers": 1476,
+          "followers": 1481,
           "reach": 37300,
-          "views": 251600,
+          "views": 252300,
           "interactions": 8200,
           "likes": null,
           "comments": null,
@@ -1715,21 +1715,21 @@
         "YouTube": {
           "followers": 1396,
           "reach": null,
-          "views": 333809,
+          "views": 334010,
           "interactions": null,
           "likes": null,
           "comments": null,
           "shares": null,
           "saves": null,
-          "watchTime48h": 189,
+          "watchTime48h": 284,
           "watchTime": 4600
         },
         "TikTok": {
-          "followers": 754,
+          "followers": 758,
           "reach": null,
-          "views": 93000,
-          "interactions": 1384,
-          "likes": 1666,
+          "views": 93100,
+          "interactions": 2369,
+          "likes": 1687,
           "comments": null,
           "shares": null,
           "saves": null,
@@ -1740,25 +1740,25 @@
         {
           "name": "Uppertech",
           "profile": "",
-          "date": "2026-11-23",
-          "total": 65376,
+          "date": "2026-11-24",
+          "total": null,
           "color": "#E5484D",
           "followers": {
-            "Instagram": 64700,
+            "Instagram": 65000,
             "Facebook": 0,
-            "TikTok": 619,
+            "TikTok": null,
             "YouTube": 57
           }
         },
         {
           "name": "Tiger Auto",
           "profile": "",
-          "date": "2026-11-23",
-          "total": 14300,
+          "date": "2026-11-24",
+          "total": 14728,
           "color": "#268CFF",
           "followers": {
-            "Instagram": 11600,
-            "Facebook": 2700,
+            "Instagram": 12000,
+            "Facebook": 2728,
             "TikTok": 0,
             "YouTube": 0
           }
@@ -1766,7 +1766,7 @@
         {
           "name": "E Tech",
           "profile": "",
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "total": 1391,
           "color": "#E5484D",
           "followers": {
@@ -1779,11 +1779,11 @@
         {
           "name": "Tarponn",
           "profile": "",
-          "date": "2026-11-23",
-          "total": 13212,
+          "date": "2026-11-24",
+          "total": 13612,
           "color": "#F4C430",
           "followers": {
-            "Instagram": 11600,
+            "Instagram": 12000,
             "Facebook": 618,
             "TikTok": 0,
             "YouTube": 994
@@ -1792,11 +1792,11 @@
         {
           "name": "FP Import",
           "profile": "",
-          "date": "2026-11-23",
-          "total": 5823,
+          "date": "2026-11-24",
+          "total": 5821,
           "color": "#E5484D",
           "followers": {
-            "Instagram": 4924,
+            "Instagram": 4922,
             "Facebook": 0,
             "TikTok": 0,
             "YouTube": 899
@@ -1805,37 +1805,37 @@
         {
           "name": "First Option",
           "profile": "",
-          "date": "2026-11-23",
-          "total": 2058,
+          "date": "2026-11-24",
+          "total": null,
           "color": "#34C759",
           "followers": {
-            "Instagram": 1542,
+            "Instagram": 1540,
             "Facebook": 0,
-            "TikTok": 266,
-            "YouTube": 250
+            "TikTok": null,
+            "YouTube": 251
           }
         },
         {
           "name": "Alemar Group",
           "profile": "",
-          "date": "2026-11-23",
-          "total": 48833,
+          "date": "2026-11-24",
+          "total": null,
           "color": "#268CFF",
           "followers": {
             "Instagram": 46000,
             "Facebook": 0,
-            "TikTok": 2735,
+            "TikTok": null,
             "YouTube": 98
           }
         },
         {
           "name": "Force One",
           "profile": "",
-          "date": "2026-11-23",
-          "total": 11500,
+          "date": "2026-11-24",
+          "total": 12000,
           "color": "#F5F5F5",
           "followers": {
-            "Instagram": 11500,
+            "Instagram": 12000,
             "Facebook": 0,
             "TikTok": 0,
             "YouTube": 0
@@ -1844,7 +1844,7 @@
         {
           "name": "Suits",
           "profile": "",
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "total": 1551,
           "color": "#A855F7",
           "followers": {
@@ -1857,11 +1857,11 @@
         {
           "name": "Somma Films Wintech",
           "profile": "",
-          "date": "2026-11-23",
-          "total": 11279,
+          "date": "2026-11-24",
+          "total": 11679,
           "color": "#E5484D",
           "followers": {
-            "Instagram": 10600,
+            "Instagram": 11000,
             "Facebook": 679,
             "TikTok": 0,
             "YouTube": 0
@@ -1870,24 +1870,24 @@
         {
           "name": "Code Automotive",
           "profile": "",
-          "date": "2026-11-23",
-          "total": 11381,
+          "date": "2026-11-24",
+          "total": null,
           "color": "#F4C430",
           "followers": {
-            "Instagram": 7633,
+            "Instagram": 7630,
             "Facebook": 679,
-            "TikTok": 2260,
-            "YouTube": 809
+            "TikTok": null,
+            "YouTube": 810
           }
         },
         {
           "name": "Cinoy",
           "profile": "",
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "total": null,
           "color": "#E5484D",
           "followers": {
-            "Instagram": 15100,
+            "Instagram": 15000,
             "Facebook": null,
             "TikTok": 0,
             "YouTube": 1080
@@ -1896,25 +1896,25 @@
         {
           "name": "JR8",
           "profile": "",
-          "date": "2026-11-23",
-          "total": 30374,
+          "date": "2026-11-24",
+          "total": null,
           "color": "#E5484D",
           "followers": {
-            "Instagram": 27700,
-            "Facebook": 1400,
-            "TikTok": 174,
+            "Instagram": 28000,
+            "Facebook": 1486,
+            "TikTok": null,
             "YouTube": 1100
           }
         },
         {
           "name": "Shock Light",
           "profile": "",
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "total": null,
           "color": "#268CFF",
           "followers": {
-            "Instagram": 20600,
-            "Facebook": 2600,
+            "Instagram": 21000,
+            "Facebook": 2668,
             "TikTok": null,
             "YouTube": 1260
           }
@@ -1922,7 +1922,7 @@
         {
           "name": "ASX",
           "profile": "",
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "total": 68000,
           "color": "#F5F5F5",
           "followers": {
