@@ -46,7 +46,6 @@ export default function Competitors({month,metric}:{month:Month;metric:'total'|N
   return()=>clearTimeout(timer);
  },[metric,rankSignature]);
  const preservedTikTokDates=[...new Set(month.competitors.flatMap(competitor=>competitor.followerDates?.TikTok ?? []))];
- const preservedTikTokDate=preservedTikTokDates.length===1?preservedTikTokDates[0]:null;
  const competitorDates=[...new Set(month.competitors.map(competitor=>competitor.date))].sort();
  const rows=selected?rankedRows.filter(row=>row.name==='RayX'||row.name===selected):rankedRows;
  const maximum=Math.max(1,...rows.map(row=>row.value??0));
@@ -67,6 +66,6 @@ export default function Competitors({month,metric}:{month:Month;metric:'total'|N
   </div>}
   <small>{t(metric==='total'?'Total das quatro redes':'Seguidores / inscritos por rede')} · {t('referência')} {new Date(month.date+'T12:00:00').toLocaleDateString(dateLocale)} · {t('Clique em um concorrente para comparar')}</small>
   {competitorDates.some(date=>date!==month.date)&&<small> · {t('Concorrentes')} · {t('referência')} {competitorDates.map(date=>new Date(date+'T12:00:00').toLocaleDateString(dateLocale)).join(' / ')}</small>}
-  {preservedTikTokDate&&(metric==='TikTok'||metric==='total')&&<small> · {t('TikTok dos concorrentes')} · {t('referência')} {new Date(preservedTikTokDate+'T12:00:00').toLocaleDateString(dateLocale)}</small>}
+  {preservedTikTokDates.length>0&&(metric==='TikTok'||metric==='total')&&<small> · {t('TikTok dos concorrentes')} · {t('referência')} {preservedTikTokDates.sort().map(date=>new Date(date+'T12:00:00').toLocaleDateString(dateLocale)).join(' / ')}</small>}
  </section>;
 }

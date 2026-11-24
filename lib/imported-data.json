@@ -1741,13 +1741,16 @@
           "name": "Uppertech",
           "profile": "",
           "date": "2026-11-24",
-          "total": null,
+          "total": 65676,
           "color": "#E5484D",
           "followers": {
             "Instagram": 65000,
             "Facebook": 0,
-            "TikTok": null,
+            "TikTok": 619,
             "YouTube": 57
+          },
+          "followerDates": {
+            "TikTok": "2026-11-23"
           }
         },
         {
@@ -1806,26 +1809,32 @@
           "name": "First Option",
           "profile": "",
           "date": "2026-11-24",
-          "total": null,
+          "total": 2057,
           "color": "#34C759",
           "followers": {
             "Instagram": 1540,
             "Facebook": 0,
-            "TikTok": null,
+            "TikTok": 266,
             "YouTube": 251
+          },
+          "followerDates": {
+            "TikTok": "2026-11-23"
           }
         },
         {
           "name": "Alemar Group",
           "profile": "",
           "date": "2026-11-24",
-          "total": null,
+          "total": 48833,
           "color": "#268CFF",
           "followers": {
             "Instagram": 46000,
             "Facebook": 0,
-            "TikTok": null,
+            "TikTok": 2735,
             "YouTube": 98
+          },
+          "followerDates": {
+            "TikTok": "2026-11-23"
           }
         },
         {
@@ -1871,13 +1880,16 @@
           "name": "Code Automotive",
           "profile": "",
           "date": "2026-11-24",
-          "total": null,
+          "total": 11379,
           "color": "#F4C430",
           "followers": {
             "Instagram": 7630,
             "Facebook": 679,
-            "TikTok": null,
+            "TikTok": 2260,
             "YouTube": 810
+          },
+          "followerDates": {
+            "TikTok": "2026-11-23"
           }
         },
         {
@@ -1897,26 +1909,32 @@
           "name": "JR8",
           "profile": "",
           "date": "2026-11-24",
-          "total": null,
+          "total": 30760,
           "color": "#E5484D",
           "followers": {
             "Instagram": 28000,
             "Facebook": 1486,
-            "TikTok": null,
+            "TikTok": 174,
             "YouTube": 1100
+          },
+          "followerDates": {
+            "TikTok": "2026-11-23"
           }
         },
         {
           "name": "Shock Light",
           "profile": "",
           "date": "2026-11-24",
-          "total": null,
+          "total": 24939,
           "color": "#268CFF",
           "followers": {
             "Instagram": 21000,
             "Facebook": 2668,
-            "TikTok": null,
+            "TikTok": 11,
             "YouTube": 1260
+          },
+          "followerDates": {
+            "TikTok": "2026-11-16"
           }
         },
         {

@@ -51,7 +51,7 @@ def apply_update(data, observations):
     current = snapshot('update-2026-11-18.json')
     latest = snapshot('update-2026-11-20.json')
     network_update = snapshot('update-2026-11-25.json')
-    competitor_update = snapshot('competitors-2026-11-24.json')
+    competitor_update = snapshot('competitors-2026-11-24-restored.json')
     month = next(m for m in data['months'] if m['month'] == '2026-11')
     original_date = month['date']
     target_date = current['referenceDate']

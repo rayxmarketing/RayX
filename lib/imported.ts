@@ -5,7 +5,8 @@ import novemberUpdate from './update-2026-11-18.json';
 import latestUpdate from './update-2026-11-20.json';
 import networkUpdate from './update-2026-11-25.json';
 import previousCompetitors from './competitors-2026-11-23.json';
-import competitorUpdate from './competitors-2026-11-24.json';
+import collectedCompetitors from './competitors-2026-11-24.json';
+import competitorUpdate from './competitors-2026-11-24-restored.json';
 import {Data,Metrics,Network,Post,networks} from './data';
 export function importedData():Data {
  return structuredClone(imported) as Data;
@@ -79,15 +80,16 @@ export function refreshNovemberUpdate(data:Data):Data {
 
  let changed=false;
  const competitors=month.competitors.map(competitor=>{
-  const baseline=[novemberUpdate,previousCompetitors].find(snapshot=>snapshot.referenceDate===competitor.date)
+  const baseline=[novemberUpdate,previousCompetitors,collectedCompetitors].find(snapshot=>snapshot.referenceDate===competitor.date)
    ?.competitors.find(item=>item.name===competitor.name);
   const incoming=competitorUpdate.competitors.find(item=>item.name===competitor.name);
   if(!baseline || !incoming || competitor.date!==baseline.date) return competitor;
+  if(baseline.date===incoming.date && baseline.followers.TikTok===incoming.followers.TikTok) return competitor;
   if(!networks.every(network=>competitor.followers[network]===baseline.followers[network])) return competitor;
   if(competitor.total!=null && competitor.total!==baseline.total) return competitor;
 
   changed=true;
-  return {...competitor,date:incoming.date,followers:{...incoming.followers},total:incoming.total,followerDates:undefined};
+  return {...competitor,date:incoming.date,followers:{...incoming.followers},total:incoming.total,followerDates:incoming.followerDates};
  });
  return changed ? {...refreshed,months:refreshed.months.map(item=>item===month ? {...item,competitors} : item)} : refreshed;
 }
