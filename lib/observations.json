@@ -3607,29 +3607,6 @@
     "month": "2026-11",
     "date": "2026-11-23",
     "values": {
-      "Instagram · Views": null,
-      "Instagram · Alcance": null,
-      "Instagram · Interações": null,
-      "Instagram · Visitas": null,
-      "Instagram · Seguidores": null,
-      "Facebook · Views": null,
-      "Facebook · Engajamento": null,
-      "Facebook · Seguidores": null,
-      "TikTok · Views": null,
-      "TikTok · Views Perfil": null,
-      "TikTok · Interações": null,
-      "TikTok · Curtidas": null,
-      "TikTok · Seguidores": null,
-      "YouTube · Views": null,
-      "YouTube · Tempo 48h": null,
-      "YouTube · Tempo": null,
-      "YouTube · Inscritos": null
-    }
-  },
-  {
-    "month": "2026-11",
-    "date": "2026-11-24",
-    "values": {
       "Instagram · Views": 251600,
       "Instagram · Alcance": 37300,
       "Instagram · Interações": 8200,
@@ -3651,7 +3628,7 @@
   },
   {
     "month": "2026-11",
-    "date": "2026-11-25",
+    "date": "2026-11-24",
     "values": {
       "Instagram · Views": 252300,
       "Instagram · Alcance": 37300,
@@ -3660,7 +3637,7 @@
       "Instagram · Seguidores": 1481,
       "Facebook · Views": 1730932,
       "Facebook · Engajamento": 37472,
-      "Facebook · Seguidores": 10896,
+      "Facebook · Seguidores": 12896,
       "TikTok · Views": 93100,
       "TikTok · Views Perfil": 1200,
       "TikTok · Interações": 2369,
@@ -3668,6 +3645,29 @@
       "TikTok · Seguidores": 758,
       "YouTube · Views": 334010,
       "YouTube · Tempo 48h": 284,
+      "YouTube · Tempo": 4600,
+      "YouTube · Inscritos": 1396
+    }
+  },
+  {
+    "month": "2026-11",
+    "date": "2026-11-25",
+    "values": {
+      "Instagram · Views": 253100,
+      "Instagram · Alcance": 37300,
+      "Instagram · Interações": 8300,
+      "Instagram · Visitas": 7000,
+      "Instagram · Seguidores": 1483,
+      "Facebook · Views": 1733240,
+      "Facebook · Engajamento": 37559,
+      "Facebook · Seguidores": 12649,
+      "TikTok · Views": 94100,
+      "TikTok · Views Perfil": 1300,
+      "TikTok · Interações": 1372,
+      "TikTok · Curtidas": 1688,
+      "TikTok · Seguidores": 759,
+      "YouTube · Views": 334138,
+      "YouTube · Tempo 48h": 316,
       "YouTube · Tempo": 4600,
       "YouTube · Inscritos": 1396
     }

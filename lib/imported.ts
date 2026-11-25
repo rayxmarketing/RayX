@@ -1,4 +1,5 @@
 import imported from './imported-data.json';
+import baseline25 from './baseline-before-2026-11-25.json';
 import previousUpdate from './update-2026-11-16.json';
 import previousPosts from './update-posts-2026-11-17.json';
 import novemberUpdate from './update-2026-11-18.json';
@@ -85,6 +86,37 @@ function refreshNovemberPosts(data:Data):Data {
 // Merge only fields that still match the published baseline. The read does not
 // write to browser storage or Supabase. An explicit admin save retains the merge.
 export function refreshNovemberUpdate(data:Data):Data {
+ return refreshNovember25(refreshEarlierNovemberUpdate(data));
+}
+
+function refreshNovember25(data:Data):Data {
+ const baseline=baseline25.months.find(m=>m.month==='2026-11')!;
+ const incoming=importedData().months.find(m=>m.month==='2026-11')!;
+ const original=data.months.find(m=>m.month==='2026-11');
+ if(!original || original.date>incoming.date) return data;
+ const result=structuredClone(data);
+ const month=result.months.find(m=>m.month==='2026-11')!;
+ mergeNovemberMetrics(month,incoming.metrics,baseline.metrics);
+ for(const competitor of month.competitors){
+  const before=baseline.competitors.find(c=>c.name===competitor.name);
+  const after=incoming.competitors.find(c=>c.name===competitor.name);
+  if(!before || !after || competitor.date!==before.date) continue;
+  if(!networks.every(n=>competitor.followers[n]===before.followers[n])) continue;
+  Object.assign(competitor,{date:after.date,followers:{...after.followers},followerDates:{...after.followerDates},total:after.total});
+ }
+ for(const post of incoming.posts){
+  if(baseline.posts.some(p=>p.id===post.id) || findPost(month,post as Post)) continue;
+  appendMissingPost(month,post as Post);
+  for(const [key,field] of Object.entries({allTimePostViews:'totalViews',allTimePostLikes:'totalLikes',allTimePostComments:'totalComments'} as const)){
+   const totalKey=key as keyof typeof postContributions;
+   if(result[totalKey]!=null) result[totalKey]!+=post[field]??0;
+  }
+ }
+ month.posts.sort((a,b)=>a.date.localeCompare(b.date));
+ return result;
+}
+
+function refreshEarlierNovemberUpdate(data:Data):Data {
  let refreshed=refreshNovemberMetricsAndPosts(data);
  const published=refreshed.months.find(item=>item.month==='2026-11');
  if(published?.date===latestUpdate.referenceDate || published?.date===networkUpdate.observations[0].date){
