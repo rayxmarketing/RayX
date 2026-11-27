@@ -1,0 +1,124 @@
+{
+  "referenceDate": "2026-11-27",
+  "baseline": {
+    "Facebook": {
+      "followers": 12649,
+      "reach": null,
+      "views": 1733240,
+      "interactions": 37559,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null
+    },
+    "Instagram": {
+      "followers": 1483,
+      "reach": 37300,
+      "views": 253100,
+      "interactions": 8300,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "visits": 7000
+    },
+    "YouTube": {
+      "followers": 1396,
+      "reach": null,
+      "views": 334138,
+      "interactions": null,
+      "likes": null,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "watchTime48h": 316,
+      "watchTime": 4600
+    },
+    "TikTok": {
+      "followers": 759,
+      "reach": null,
+      "views": 94100,
+      "interactions": 1372,
+      "likes": 1688,
+      "comments": null,
+      "shares": null,
+      "saves": null,
+      "profileViews": 1300
+    }
+  },
+  "metrics": {
+    "Instagram": {
+      "views": 257000,
+      "reach": 37100,
+      "interactions": 8400,
+      "visits": 7000,
+      "followers": 1497
+    },
+    "Facebook": {
+      "views": 1738159,
+      "interactions": 37655,
+      "followers": 12583
+    },
+    "TikTok": {
+      "views": 95100,
+      "profileViews": 1300,
+      "interactions": 1375,
+      "likes": 1713,
+      "followers": 773
+    },
+    "YouTube": {
+      "views": 334540,
+      "watchTime48h": 401,
+      "watchTime": 4600,
+      "followers": 1396
+    }
+  },
+  "observations": [
+    {
+      "month": "2026-11",
+      "date": "2026-11-26",
+      "values": {
+        "Instagram · Views": 255800,
+        "Instagram · Alcance": 37400,
+        "Instagram · Interações": 8300,
+        "Instagram · Visitas": 7000,
+        "Instagram · Seguidores": 1490,
+        "Facebook · Views": 1735892,
+        "Facebook · Engajamento": 37615,
+        "Facebook · Seguidores": 12615,
+        "TikTok · Views": 94600,
+        "TikTok · Views Perfil": 1300,
+        "TikTok · Interações": 1372,
+        "TikTok · Curtidas": 1702,
+        "TikTok · Seguidores": 764,
+        "YouTube · Views": 334308,
+        "YouTube · Tempo 48h": 296,
+        "YouTube · Tempo": 4600,
+        "YouTube · Inscritos": 1396
+      }
+    },
+    {
+      "month": "2026-11",
+      "date": "2026-11-27",
+      "values": {
+        "Instagram · Views": 257000,
+        "Instagram · Alcance": 37100,
+        "Instagram · Interações": 8400,
+        "Instagram · Visitas": 7000,
+        "Instagram · Seguidores": 1497,
+        "Facebook · Views": 1738159,
+        "Facebook · Engajamento": 37655,
+        "Facebook · Seguidores": 12583,
+        "TikTok · Views": 95100,
+        "TikTok · Views Perfil": 1300,
+        "TikTok · Interações": 1375,
+        "TikTok · Curtidas": 1713,
+        "TikTok · Seguidores": 773,
+        "YouTube · Views": 334540,
+        "YouTube · Tempo 48h": 401,
+        "YouTube · Tempo": 4600,
+        "YouTube · Inscritos": 1396
+      }
+    }
+  ]
+}

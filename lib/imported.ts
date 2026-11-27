@@ -1,5 +1,6 @@
 import imported from './imported-data.json';
 import baseline25 from './baseline-before-2026-11-25.json';
+import update27 from './update-2026-11-27.json';
 import previousUpdate from './update-2026-11-16.json';
 import previousPosts from './update-posts-2026-11-17.json';
 import novemberUpdate from './update-2026-11-18.json';
@@ -86,7 +87,15 @@ function refreshNovemberPosts(data:Data):Data {
 // Merge only fields that still match the published baseline. The read does not
 // write to browser storage or Supabase. An explicit admin save retains the merge.
 export function refreshNovemberUpdate(data:Data):Data {
- return refreshNovember25(refreshEarlierNovemberUpdate(data));
+ const refreshed=refreshNovember25(refreshEarlierNovemberUpdate(data));
+ const original=refreshed.months.find(m=>m.month==='2026-11');
+ if(!original || original.date>=update27.referenceDate) return refreshed;
+ const result=structuredClone(refreshed);
+ const month=result.months.find(m=>m.month==='2026-11')!;
+ mergeNovemberMetrics(month,update27.metrics,update27.baseline);
+ month.date=update27.referenceDate;
+ month.updatedAt=update27.referenceDate+'T12:00:00Z';
+ return result;
 }
 
 function refreshNovember25(data:Data):Data {
@@ -96,7 +105,7 @@ function refreshNovember25(data:Data):Data {
  if(!original || original.date>incoming.date) return data;
  const result=structuredClone(data);
  const month=result.months.find(m=>m.month==='2026-11')!;
- mergeNovemberMetrics(month,incoming.metrics,baseline.metrics);
+ mergeNovemberMetrics(month,update27.baseline,baseline.metrics);
  for(const competitor of month.competitors){
   const before=baseline.competitors.find(c=>c.name===competitor.name);
   const after=incoming.competitors.find(c=>c.name===competitor.name);
